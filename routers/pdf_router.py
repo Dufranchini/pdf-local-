@@ -48,8 +48,8 @@ async def merge_files(files: list[UploadFile] = File(...)):
                     pdf_convertido = convert_image_to_pdf(str(file_path), str(temp_path))
                     pdfs_para_juntar.append(pdf_convertido)
                     
-                # NOVA CONDIÇÃO: Tratamento para arquivos do Word (DOC e DOCX)
-                elif ext in [".doc", ".docx"]:
+                # NOVA CONDIÇÃO: Tratamento para arquivos do Office (DOC, DOCX, XLS, XLSX, PPT, PPTX)
+                elif ext in [".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx"]:
                     # Converte o arquivo Office para PDF no diretório temporário
                     pdf_convertido = convert_office_to_pdf(str(file_path), str(temp_path))
                     pdfs_para_juntar.append(pdf_convertido)
