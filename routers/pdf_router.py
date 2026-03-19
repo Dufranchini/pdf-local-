@@ -6,9 +6,9 @@ import uuid
 from fastapi import APIRouter, UploadFile, File, HTTPException
 from fastapi.responses import FileResponse
 
-# Importação da conversão de imagens que você já possuía
+# Importação da conversão de imagens 
 from services.conversion.image_converter import convert_image_to_pdf
-# NOVA IMPORTAÇÃO: Nossa nova função de conversão via LibreOffice
+# função de conversão via LibreOffice
 from services.conversion.office_converter import convert_office_to_pdf
 from services.pdf.merge import merge_pdfs
 
