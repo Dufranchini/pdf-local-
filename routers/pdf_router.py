@@ -19,7 +19,7 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 
 # --- REGRAS DE SEGURANÇA (DoS) ---
 MAX_FILES = 10
-MAX_FILE_SIZE = 100 * 1024 * 1024   # 100 megabytes em bytes
+MAX_FILE_SIZE = 10 * 1024 * 1024 * 1024  # 10 megabytes em bytes
 
 def remover_arquivo_seguro(path: str):
     """
