@@ -1,59 +1,61 @@
 import subprocess
 import os
+import platform
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Carrega as variáveis de ambiente do ficheiro .env para a memória do Python
+load_dotenv()
 
 def convert_office_to_pdf(input_path: str, output_dir: str) -> str:
     """
-    Converte arquivos do pacote Office (como DOC e DOCX) para PDF usando LibreOffice no Windows.
-    
-    Parâmetros:
-    - input_path (str): Caminho completo do arquivo original.
-    - output_dir (str): Diretório onde o PDF gerado será salvo.
-    
-    Retorno:
-    - str: O caminho completo do arquivo PDF gerado.
+    Converte arquivos do pacote Office para PDF usando LibreOffice.
     """
     
-    # Caminho padrão de instalação do LibreOffice no Windows 64 bits.
-    # O "r" antes das aspas indica uma "raw string", evitando que as barras invertidas (\) causem erros.
-    libreoffice_exec = r"C:\Program Files\LibreOffice\program\soffice.exe"
+    # 1. Tenta ler o caminho do LibreOffice a partir do ficheiro .env
+    libreoffice_exec = os.getenv("LIBREOFFICE_PATH")
     
-    # Verificação de segurança: checa se o executável realmente existe neste caminho
-    if not os.path.exists(libreoffice_exec):
-        raise FileNotFoundError(
+    # 2. LÓGICA DE FALLBACK (Plano B de Segurança)
+    # Se por algum motivo o .env não existir ou a variável estiver vazia,
+    # usamos o comportamento padrão (inteligente) baseado no Sistema Operativo.
+    if not libreoffice_exec:
+        if platform.system() == "Windows":
+            libreoffice_exec = r"C:\Program Files\LibreOffice\program\soffice.exe"
+        else:
+            libreoffice_exec = "libreoffice"
+    
+    # Validação para garantir que não tentamos executar um caminho que não existe
+    if platform.system() == "Windows" and not os.path.exists(libreoffice_exec) and libreoffice_exec != "libreoffice":
+         raise FileNotFoundError(
             f"O executável do LibreOffice não foi encontrado em: {libreoffice_exec}. "
-            "Verifique se ele está instalado neste diretório."
+            "Verifique o ficheiro .env ou a instalação."
         )
-    
+
     try:
-        # Montamos a lista de comandos que será enviada ao terminal do Windows (CMD/PowerShell)
         comando = [
             libreoffice_exec,
-            "--headless",       # Executa de forma invisível (sem abrir a janela do Word/LibreOffice)
-            "--convert-to",     # Comando de conversão
-            "pdf",              # Formato de saída
-            "--outdir",         # Define o diretório de destino
-            output_dir,         # A variável com a pasta temporária
-            input_path          # O arquivo DOC/DOCX de origem
+            "--headless",
+            "--convert-to",
+            "pdf",
+            "--outdir",
+            output_dir,
+            input_path
         ]
         
-        # Executa o comando. O check=True faz com que o Python lance um erro se o LibreOffice falhar.
+        # Executa o comando
         subprocess.run(comando, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         
-        # O LibreOffice salva o PDF com o mesmo nome do arquivo original. 
-        # Vamos descobrir o nome correto para retornar ao nosso roteador.
-        base_name = Path(input_path).stem  # Ex: pega 'contrato' de 'contrato.docx'
+        # O LibreOffice salva com o mesmo nome original, mas extensão .pdf
+        base_name = Path(input_path).stem
         output_pdf_path = os.path.join(output_dir, f"{base_name}.pdf")
         
-        # Verificamos se o arquivo PDF foi realmente criado fisicamente na pasta
         if not os.path.exists(output_pdf_path):
-            raise FileNotFoundError("A conversão parece ter ocorrido, mas o PDF não foi encontrado na pasta de destino.")
+            raise FileNotFoundError("A conversão falhou: o ficheiro PDF não foi encontrado no diretório de destino.")
             
         return output_pdf_path
         
     except subprocess.CalledProcessError as e:
-        # Pega a mensagem de erro exata que o LibreOffice jogaria no terminal
         erro_msg = e.stderr.decode('utf-8', errors='ignore') if e.stderr else str(e)
-        raise Exception(f"Falha na conversão via LibreOffice: {erro_msg}")
+        raise Exception(f"Falha na execução do LibreOffice: {erro_msg}")
     except Exception as e:
-        raise Exception(f"Erro inesperado ao converter Office para PDF: {str(e)}")
+        raise Exception(f"Erro inesperado ao converter documento Office: {str(e)}")
