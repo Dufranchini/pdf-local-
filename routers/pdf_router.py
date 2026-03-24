@@ -1,8 +1,8 @@
 import os
-from pathlib import Path
 import tempfile
 import uuid
 
+from pathlib import Path
 from fastapi import APIRouter, UploadFile, File, HTTPException, BackgroundTasks
 from fastapi.responses import FileResponse
 # IMPORTANTE: Importamos o threadpool para evitar que o servidor trave
@@ -42,25 +42,32 @@ async def merge_files(files: list[UploadFile] = File(...)):
 
     try:
         pdfs_para_juntar = []
+        
+        # 3. VALIDAÇÃO DE TAMANHO GLOBAL (A variável vem para FORA do loop)
+        # Ela começa a zero e vai engordar com cada ficheiro processado
+        tamanho_acumulado = 0
 
         with tempfile.TemporaryDirectory() as temp_dir:
             temp_path = Path(temp_dir)
 
             for file in files:
-                # 2. SANITIZAÇÃO DE NOMES (Prevenção de Path Traversal e RCE)
-                # Ignoramos o nome original e criamos um UUID (hash) seguro.
+                # 2. SANITIZAÇÃO DE NOMES
                 ext = Path(file.filename).suffix.lower()
                 nome_seguro = f"{uuid.uuid4().hex}{ext}"
                 file_path = temp_path / nome_seguro
 
-                # 3. VALIDAÇÃO DE TAMANHO (Prevenção de DoS em Disco/RAM)
-                tamanho_total = 0
                 with open(file_path, "wb") as buffer:
-                    # Lemos o arquivo em pedaços (chunks) de 1MB por vez
+                    # Lemos o arquivo em pedaços (chunks)
                     while chunk := await file.read(1024 * 1024):
-                        tamanho_total += len(chunk)
-                        if tamanho_total > MAX_FILE_SIZE:
-                            raise HTTPException(status_code=400, detail=f"Um dos arquivos excede o limite de 50MB.")
+                        # Somamos o pedaço novo ao montante GERAL de todos os ficheiros
+                        tamanho_acumulado += len(chunk)
+                        
+                        # Se, a qualquer momento, o peso total de tudo ultrapassar 10MB, abortamos!
+                        if tamanho_acumulado > MAX_FILE_SIZE:
+                            raise HTTPException(
+                                status_code=400, 
+                                detail="O tamanho total somado dos arquivos excede o limite de 10MB."
+                            )
                         buffer.write(chunk)
 
                 # Processamento com concorrência segura (run_in_threadpool)
