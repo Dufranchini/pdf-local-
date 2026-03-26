@@ -2,6 +2,7 @@ from pathlib import Path
 from PIL import Image
 
 
+#Converte imagens para PDF usando a biblioteca Pillow (PIL).
 def convert_image_to_pdf(image_path: str, output_dir: str) -> str:
     image_path = Path(image_path)
     output_dir = Path(output_dir)

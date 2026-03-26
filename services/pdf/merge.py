@@ -1,6 +1,6 @@
 from pypdf import PdfWriter
 
-
+# Mescla vários arquivos PDF em um único arquivo PDF.
 def merge_pdfs(pdf_files: list[str], output_path: str) -> str:
     writer = PdfWriter()
 
