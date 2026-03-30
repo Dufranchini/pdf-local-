@@ -1,0 +1,17 @@
+# Ambientes Virtuais
+venv/
+venv_nativo/
+.venv/
+env/
+
+# Ficheiros Temporários do Python
+__pycache__/
+*.pyc
+
+# Pastas da nossa aplicação
+output/
+app_pdf_entrega.tar
+app_pdf_entrega.tar.gz
+
+# Ficheiro de Senhas/Variáveis (NUNCA ENVIAR PARA O GITHUB)
+.env

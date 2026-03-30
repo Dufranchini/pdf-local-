@@ -2,6 +2,7 @@ import os
 import tempfile
 import uuid
 
+
 from pathlib import Path
 from fastapi import APIRouter, UploadFile, File, HTTPException, BackgroundTasks
 from fastapi.responses import FileResponse
@@ -31,6 +32,8 @@ def remover_arquivo_seguro(path: str):
             os.remove(path)
     except Exception as e:
         print(f"Erro ao limpar arquivo {path}: {e}")
+
+
 
 @router.post("/merge")
 async def merge_files(files: list[UploadFile] = File(...)):

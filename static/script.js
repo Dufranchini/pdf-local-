@@ -63,28 +63,19 @@ generateBtn.addEventListener('click', async () => {
     return;
   }
 
-  // 1. PASSO: Pedir ao utilizador onde quer guardar ANTES de processar.
-  // Isto evita o bloqueio de segurança do navegador (Transient User Activation).
-  let fileHandle;
-  try {
-    if ('showSaveFilePicker' in window) {
-      fileHandle = await window.showSaveFilePicker({
-        suggestedName: 'Unificado.pdf',
-        types: [{
-          description: 'Documento PDF',
-          accept: { 'application/pdf': ['.pdf'] }
-        }]
-      });
-    }
-  } catch (err) {
-    // Se o utilizador clicar em "Cancelar" na janela do Windows, 
-    // paramos o processo aqui mesmo para poupar o servidor.
-    if (err.name === 'AbortError') {
-      return;
-    }
+  // 1. CAMADA DE SEGURANÇA FRONTEND (Bloqueio de 10MB)
+  const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB em bytes
+  let totalSize = 0;
+  selectedFiles.forEach(file => {
+    totalSize += file.size;
+  });
+
+  if (totalSize > MAX_FILE_SIZE) {
+    alert('⚠️ O tamanho total dos arquivos excede o limite de 10MB. Por favor, remova alguns arquivos e tente novamente.');
+    return; // Corta a execução aqui, nada é apagado e o servidor nem é incomodado!
   }
 
-  // 2. PASSO: Preparar os dados para enviar ao servidor (Backend FastAPI)
+  // 2. Preparar os dados para enviar ao servidor
   const formData = new FormData();
   selectedFiles.forEach(file => {
     formData.append('files', file);
@@ -95,7 +86,7 @@ generateBtn.addEventListener('click', async () => {
     generateBtn.disabled = true;
     generateBtn.textContent = 'A processar...';
 
-    // 3. PASSO: Enviar os ficheiros para o nosso servidor
+    // 3. Enviar os ficheiros para o nosso servidor
     const response = await fetch('/api/pdf/merge', {
       method: 'POST',
       body: formData
@@ -108,7 +99,7 @@ generateBtn.addEventListener('click', async () => {
       throw new Error(data.detail || 'Erro ao gerar o PDF.');
     }
 
-    // 4. PASSO: Descarregar o PDF final gerado
+    // 4. Descarregar o PDF final gerado
     const downloadResponse = await fetch(data.download_url);
     if (!downloadResponse.ok) {
       throw new Error('Erro ao descarregar o PDF gerado.');
@@ -116,23 +107,20 @@ generateBtn.addEventListener('click', async () => {
 
     const blob = await downloadResponse.blob();
 
-    // 5. PASSO: Guardar o ficheiro no computador do utilizador
-    if (fileHandle) {
-      // Se o utilizador escolheu a pasta no Passo 1, gravamos diretamente lá usando a autorização prévia
-      const writable = await fileHandle.createWritable();
-      await writable.write(blob);
-      await writable.close();
-    } else {
-      // Plano B (Para navegadores mais antigos): Faz o download padrão forçando o clique invisível
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'Unificado.pdf';
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      URL.revokeObjectURL(url);
-    }
+    // 5. CAMADA DE SEGURANÇA DO DOWNLOAD (O Padrão Blindado)
+    // Usando este método, o navegador trata do download. 
+    // Se um arquivo com o mesmo nome existir, o navegador cria "Unificado (1).pdf" 
+    // ou, se configurado para perguntar, só sobrescreve o arquivo no fim de tudo, com sucesso garantido.
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'Unificado.pdf';
+    document.body.appendChild(a);
+    a.click();
+    
+    // Limpeza
+    a.remove();
+    URL.revokeObjectURL(url);
 
   } catch (error) {
     // Mostra um alerta caso algo corra mal durante o processo
