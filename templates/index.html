@@ -8,10 +8,13 @@
   <link rel="stylesheet" href="/static/style.css">
 </head>
 
-
-
 <body>
   <div class="page">
+    
+    <div class="theme-toggle" id="themeToggle" title="Alternar Tema">
+      <div class="indicador"></div>
+    </div>
+
     <div class="background-brand">
       <div class="bg-text">Soluções de Infraestrutura</div>
       <div class="shape s1"></div>
@@ -28,60 +31,40 @@
           <h1>Unificador de PDFs</h1>
         </div>
       </section>
-      <!--
-      <section class="card">
-        <p class="header-label">nome do arquivo gerado</p>
-        <div class="top-row">
-          <input class="path-input" id="savePath" type="text" placeholder="Selecione onde salvar o PDF..." readonly />
-          <button class="browse-btn" id="browseBtn" type="button">📁 Procurar...</button>
-        </div>
-      -->
-      <div class="grid">
-        <div>
-          <p class="sub-label">Lista de Arquivos para Junção</p>
-          <div class="file-list-wrap">
-            <div class="file-list" id="fileList">
-              <div class="file-item">
-                <div class="file-left">
 
+      <section class="card" style="border: none; box-shadow: none; background: transparent;">
+        <div class="grid">
+          <div>
+            <p class="sub-label">Lista de Arquivos para Junção</p>
+            <div class="file-list-wrap">
+              <div class="file-list" id="fileList">
                 </div>
-
+              <div class="note-side">
+                <span class="brace"></span>
+                <span class="arrow">→</span>
+                <span>arquivos selecionados<br />para junção</span>
               </div>
-              <div class="file-item">
-                <div class="file-left">
-                </div>
-              </div>
-              <div class="file-item">
-                <div class="file-left">
-                </div>
-              </div>
-            </div>
-            <div class="note-side">
-              <span class="brace"></span>
-              <span class="arrow">→</span>
-              <span>arquivos selecionados<br />para junção</span>
             </div>
           </div>
-        </div>
-        <div></div>
-      </div>
-
-      <div class="bottom-row">
-        <div class="actions-left">
-          <label class="btn btn-green" for="pdfInput">＋ Adicionar Arquivo PDF</label>
-          <input class="hidden-input" id="pdfInput" type="file" multiple
-            accept=".pdf,.jpg,.jpeg,.png,.doc,.docx,.xls,.xlsx,.ppt,.pptx" />
-          <button class="btn btn-gold" type="button" id="clearBtn">🗑 Limpar Lista</button>
+          <div></div>
         </div>
 
-        <div class="actions-right">
-          <span class="panel-label">Painel de Ação</span>
-          <button class="btn btn-green" id="generateBtn" type="button">🔗 Juntar e Gerar PDF Unificado</button>
+        <div class="bottom-row">
+          <div class="actions-left">
+            <label class="btn btn-green" for="pdfInput">＋ Adicionar Arquivo PDF</label>
+            <input class="hidden-input" id="pdfInput" type="file" multiple accept=".pdf,.jpg,.jpeg,.png,.doc,.docx,.xls,.xlsx,.ppt,.pptx" />
+            <button class="btn btn-gold" type="button" id="clearBtn">🗑 Limpar Lista</button>
+          </div>
+
+          <div class="actions-right">
+            <span class="panel-label">Painel de Ação</span>
+            <button class="btn btn-green" id="generateBtn" type="button">🔗 Juntar e Gerar PDF Unificado</button>
+          </div>
         </div>
-      </div>
       </section>
     </div>
   </div>
+  
   <script src="/static/script.js"></script>
 </body>
 

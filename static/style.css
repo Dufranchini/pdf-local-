@@ -421,3 +421,88 @@ body {
     max-width: 170px;
   }
 }
+
+/* ==========================================
+   DARK MODE - BOTÃO E ESTILOS
+========================================== */
+
+/* 1. Estilos do botão (Trilho encolhido) */
+.theme-toggle {
+  width: 60px;
+  height: 30px;
+  background-color: #cfcfcf;
+  border-radius: 30px;
+  position: absolute;
+  top: 24px;
+  right: 36px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.4s;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.theme-toggle .indicador {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: left 0.4s, background-color 0.4s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 2. Comportamento do botão quando está Dark */
+body.dark-mode .theme-toggle {
+  background-color: var(--green); /* Fica verde quando ativo */
+}
+
+body.dark-mode .theme-toggle .indicador {
+  left: 33px; /* Move a bolinha para a direita */
+  background-color: #121212;
+}
+
+/* 3. Mudanças nas cores da Aplicação inteira */
+body.dark-mode {
+  background: #121212; /* Fundo principal escuro */
+  color: #e0e0e0;
+}
+
+body.dark-mode .panel-label,
+body.dark-mode .sub-label {
+  color: #e0e0e0;
+}
+
+/* O texto fantasma no fundo "Soluções de Infraestrutura" */
+body.dark-mode .background-brand .bg-text {
+  color: rgba(255, 255, 255, 0.04);
+}
+
+/* A caixa branca com a lista de PDFs fica cinza escuro */
+body.dark-mode .file-list {
+  background: #1e1e1e;
+  border-color: #333;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode .file-item {
+  color: #fff;
+}
+
+/* O título principal verde fica um tom mais claro para sobressair no escuro */
+body.dark-mode .title-stack h1 {
+  color: #44ae73; 
+}
+
+/* Escurecer o Cartão Principal e as suas bordas */
+body.dark-mode .card {
+  background: rgba(30, 30, 30, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Ajustar o texto da nota "arquivos selecionados..." para um verde mais legível no escuro */
+body.dark-mode .note-side,
+body.dark-mode .note-side .brace {
+  color: #44ae73;
+}

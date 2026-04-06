@@ -1,4 +1,29 @@
+// ==========================================
+// Dark / Light Mode (Tema)
+// ==========================================
+const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
 
+// Verifica se o utilizador já tinha escolhido o Dark Mode na última visita
+if (localStorage.getItem('tema') === 'escuro') {
+  body.classList.add('dark-mode');
+}
+
+// O seu evento de clique adaptado
+themeToggle.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  
+  // Guarda a preferência na memória do navegador
+  if (body.classList.contains('dark-mode')) {
+    localStorage.setItem('tema', 'escuro');
+  } else {
+    localStorage.setItem('tema', 'claro');
+  }
+});
+
+// ==========================================
+// Lógica Principal dos PDFs
+// ==========================================
 // Referências aos elementos do nosso ecrã (HTML)
 const fileInput = document.getElementById('pdfInput');
 const fileList = document.getElementById('fileList');
@@ -114,7 +139,7 @@ generateBtn.addEventListener('click', async () => {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'Unificado.pdf';
+    a.download = 'Mway_unificado.pdf'; // Nome sugerido para o arquivo baixado
     document.body.appendChild(a);
     a.click();
     
