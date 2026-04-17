@@ -146,35 +146,6 @@ body {
   backdrop-filter: blur(3px);
 }
 
-.card::before,
-.card::after {
-  content: "";
-  position: absolute;
-  width: 74px;
-  height: 74px;
-  border-radius: 50%;
-  border: 10px solid rgba(210, 171, 44, 0.85);
-  clip-path: inset(0 0 44% 0);
-  top: -16px;
-  opacity: 0.9;
-}
-
-.card::before {
-  right: 132px;
-}
-
-.card::after {
-  right: 34px;
-  border-color: rgba(31, 107, 69, 0.20);
-  clip-path: none;
-  border-radius: 8px;
-  width: 52px;
-  height: 52px;
-  border-width: 8px;
-  top: 20px;
-  transform: rotate(0deg);
-}
-
 .header-label {
   font-size: 1.15rem;
   font-weight: 800;

@@ -9,6 +9,7 @@ from fastapi.responses import FileResponse
 # IMPORTANTE: Importamos o threadpool para evitar que o servidor trave
 from starlette.concurrency import run_in_threadpool 
 
+
 from services.conversion.image_converter import convert_image_to_pdf
 from services.conversion.office_converter import convert_office_to_pdf
 from services.pdf.merge import merge_pdfs
@@ -22,6 +23,8 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 MAX_FILES = 10
 MAX_FILE_SIZE = 10 * 1024 * 1024 # 10 megabytes em bytes
 
+
+
 def remover_arquivo_seguro(path: str):
     """
     Função de limpeza. Será executada em segundo plano após o download.
@@ -32,6 +35,7 @@ def remover_arquivo_seguro(path: str):
             os.remove(path)
     except Exception as e:
         print(f"Erro ao limpar arquivo {path}: {e}")
+
 
 
 
