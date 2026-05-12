@@ -1,0 +1,58 @@
+2026-05-06 16:42:56 | INFO     | main | Página inicial acessada
+2026-05-06 16:43:27 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 3
+2026-05-06 16:43:27 | DEBUG    | pdf_router | Processando arquivo: ebook_ada8496c-d114-42c7-a45e-f693687feb2d.pdf | Tipo: .pdf
+2026-05-06 16:43:27 | DEBUG    | pdf_router | Processando arquivo: imagem.png | Tipo: .png
+2026-05-06 16:43:27 | DEBUG    | pdf_router | Processando arquivo: Information System.xlsx | Tipo: .xlsx
+2026-05-06 16:43:27 | ERROR    | pdf_router | Erro interno inesperado: Erro inesperado ao converter documento Office: [WinError 2] O sistema não pode encontrar o arquivo especificado
+Traceback (most recent call last):
+  File "C:\Users\CarlosMoreira\OneDrive - M.Way Industria de Infraestrutura Ltda\Área de Trabalho\APP_MWAY_LINUX\services\conversion\office_converter.py", line 82, in convert_office_to_pdf
+    subprocess.run(comando, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CarlosMoreira\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 554, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CarlosMoreira\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CarlosMoreira\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1554, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+                             # no special security
+                             ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+                             cwd,
+                             ^^^^
+                             startupinfo)
+                             ^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] O sistema não pode encontrar o arquivo especificado
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\CarlosMoreira\OneDrive - M.Way Industria de Infraestrutura Ltda\Área de Trabalho\APP_MWAY_LINUX\routers\pdf_router.py", line 81, in merge_files
+    await run_in_threadpool(convert_office_to_pdf, str(temp_path), str(output_pdf))
+  File "C:\Users\CarlosMoreira\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\CarlosMoreira\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\CarlosMoreira\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\CarlosMoreira\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+  File "C:\Users\CarlosMoreira\OneDrive - M.Way Industria de Infraestrutura Ltda\Área de Trabalho\APP_MWAY_LINUX\services\conversion\office_converter.py", line 97, in convert_office_to_pdf
+    raise Exception(f"Erro inesperado ao converter documento Office: {str(e)}")
+Exception: Erro inesperado ao converter documento Office: [WinError 2] O sistema não pode encontrar o arquivo especificado

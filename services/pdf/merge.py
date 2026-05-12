@@ -1,27 +1,38 @@
 from pypdf import PdfReader, PdfWriter
-
-# DEFINE O TAMANHO DA PÁGINA PARA A4
-A4_LARGURA = 595.28
-A4_ALTURA = 841.89
+from pypdf.errors import PdfReadError 
 
 def merge_pdfs(pdf_list: list[str], output_path: str):
     """
-    Junta uma lista de caminhos de PDFs em um único arquivo PDF.
-    Também padroniza todas as páginas geradas para o tamanho A4.
+    Junta uma lista de caminhos de PDFs num único ficheiro, mantendo o tamanho original.
+    Possui tratamento de erros para PDFs corrompidos ou com senha.
     """
     escritor = PdfWriter()
 
     for caminho in pdf_list:
-        leitor = PdfReader(caminho)
-        
-        # Percorre todas as páginas do PDF atual
-        for pagina in leitor.pages:
-            # A MÁGICA DO A4: Redimensiona a página para caber no formato A4
-            pagina.scale_to(width=A4_LARGURA, height=A4_ALTURA)
+        try:
+            # TENTA ler o ficheiro PDF
+            leitor = PdfReader(caminho)
             
-            # Adiciona a página formatada ao documento final
-            escritor.add_page(pagina)
+            # 1. Verifica se o PDF está encriptado (com palavra-passe)
+            if leitor.is_encrypted:
+                raise Exception("Um dos arquivos está protegido com senha e não pode ser unificado.")
+
+            # Percorre todas as páginas do PDF atual
+            for pagina in leitor.pages:
+                # Adiciona a página exatamente como ela veio, sem redimensionar
+                escritor.add_page(pagina)
+
+        # CAPTURA o erro se o PDF estiver corrompido
+        except PdfReadError:
+            raise Exception("Um dos arquivos selecionados está corrompido ou não é um PDF válido.")
+            
+        # CAPTURA qualquer outro erro imprevisto
+        except Exception as e:
+            raise Exception(f"Erro ao processar um arquivo: {str(e)}")
 
     # Escreve o resultado final no caminho de saída especificado
-    with open(output_path, "wb") as f_out:
-        escritor.write(f_out)
+    try:
+        with open(output_path, "wb") as f_out:
+            escritor.write(f_out)
+    except PermissionError:
+        raise Exception("Erro de permissão no servidor ao tentar salvar o arquivo final.")

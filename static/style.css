@@ -11,9 +11,7 @@
   --shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -38,48 +36,6 @@ body {
   position: relative;
 }
 
-.background-brand {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.background-brand .bg-text {
-  position: absolute;
-  left: 40px;
-  bottom: -18px;
-  font-size: 5.2rem;
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.10);
-  letter-spacing: -2px;
-  white-space: nowrap;
-}
-
-.background-brand .shape {
-  position: absolute;
-  border-radius: 20px;
-  opacity: 0.95;
-  transform: skewX(-20deg);
-}
-
-.background-brand .shape.s1 {
-  width: 140px;
-  height: 26px;
-  right: 270px;
-  top: 245px;
-  background: linear-gradient(90deg, #279159, #44ae73);
-}
-
-.background-brand .shape.s2 {
-  width: 34px;
-  height: 26px;
-  right: 260px;
-  top: 245px;
-  background: #2f2f34;
-  border-radius: 0 18px 18px 0;
-}
-
 .stage {
   position: relative;
   z-index: 1;
@@ -90,6 +46,9 @@ body {
   gap: 38px;
 }
 
+/* ==========================================
+   BRAND / LOGO
+========================================== */
 .left-brand {
   flex: 1;
   min-width: 360px;
@@ -134,6 +93,9 @@ body {
   letter-spacing: -0.5px;
 }
 
+/* ==========================================
+   CARD PRINCIPAL
+========================================== */
 .card {
   width: 760px;
   max-width: 100%;
@@ -146,162 +108,171 @@ body {
   backdrop-filter: blur(3px);
 }
 
-.header-label {
-  font-size: 1.15rem;
-  font-weight: 800;
-  margin: 0 0 8px;
-}
-
-.top-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 14px;
-}
-
-.path-input {
-  flex: 1;
-  height: 42px;
-  border-radius: 10px;
-  border: 1px solid #c9c9c9;
-  padding: 0 14px;
-  font-size: 0.98rem;
-  color: #444;
-  background: #fdfdfd;
-}
-
-.browse-btn {
-  height: 42px;
-  padding: 0 18px;
-  border: none;
-  border-radius: 10px;
-  background: linear-gradient(180deg, #2d7a52 0%, #1f6b45 100%);
-  color: white;
-  font-size: 0.95rem;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0 6px 16px rgba(31, 107, 69, 0.24);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 360px 1fr;
-  gap: 28px;
-  align-items: start;
-}
-
 .sub-label {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   font-size: 1rem;
   font-weight: 800;
 }
 
-.file-list-wrap {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
+/* ==========================================
+   LISTA DE ARQUIVOS (coluna de cards)
+========================================== */
 .file-list {
-  background: #fff;
-  border: 2px solid #cfcfcf;
-  border-radius: 14px;
-  min-height: 124px;
-  padding: 10px 12px;
-  width: 100%;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 80px;
+  padding: 4px 0;
 }
 
-.file-item {
+/* Estado vazio */
+.file-list-empty {
+  font-size: 0.9rem;
+  color: var(--muted);
+  padding: 18px 0;
+  text-align: center;
+}
+
+/* ==========================================
+   CADA CARD DE ARQUIVO
+========================================== */
+.file-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  padding: 6px 2px;
-  font-size: 0.94rem;
+  padding: 10px 12px;
+  background: #fff;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  cursor: grab;
+  user-select: none;
+  transition: box-shadow 0.15s, border-color 0.15s, opacity 0.15s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
 }
 
-.file-left {
+.file-card:hover {
+  border-color: #bbb;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+}
+
+/* Card sendo arrastado — fica transparente no lugar original */
+.file-card.dragging {
+  opacity: 0.3;
+  cursor: grabbing;
+}
+
+/* Indicador de drop: linha verde no TOPO do card alvo */
+.file-card.drag-over-top {
+  border-top: 2.5px solid var(--green);
+  box-shadow: 0 -2px 0 0 var(--green), 0 3px 10px rgba(0,0,0,0.10);
+}
+
+/* Indicador de drop: linha verde no FUNDO do card alvo */
+.file-card.drag-over-bottom {
+  border-bottom: 2.5px solid var(--green);
+  box-shadow: 0 2px 0 0 var(--green), 0 3px 10px rgba(0,0,0,0.10);
+}
+
+/* ── Lado esquerdo do card ── */
+.file-card-left {
   display: flex;
   align-items: center;
   gap: 10px;
   min-width: 0;
+  flex: 1;
 }
 
-.pdf-icon {
-  width: 28px;
-  height: 34px;
+/* Número de ordem (1, 2, 3...) */
+.file-order {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #fff;
+  background: var(--green);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Ícone PDF */
+.file-card-icon {
+  width: 26px;
+  height: 32px;
   background: linear-gradient(180deg, #5f8f66 0%, #2d6f45 100%);
   border-radius: 4px;
   position: relative;
   flex-shrink: 0;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.25);
 }
 
-.pdf-icon::before {
+.file-card-icon::before {
   content: "PDF";
   position: absolute;
-  bottom: 4px;
+  bottom: 3px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 0.48rem;
+  font-size: 0.44rem;
   font-weight: 700;
   color: white;
   letter-spacing: 0.4px;
 }
 
-.pdf-icon::after {
+.file-card-icon::after {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  border-top: 9px solid #dce9df;
-  border-left: 9px solid transparent;
-  width: 0;
-  height: 0;
+  top: 0; right: 0;
+  border-top: 8px solid #dce9df;
+  border-left: 8px solid transparent;
   border-top-right-radius: 2px;
 }
 
-.file-name {
+/* Nome do arquivo */
+.file-card-name {
+  font-size: 0.9rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 230px;
+  color: var(--text);
 }
 
+/* ── Lado direito do card ── */
+.file-card-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+/* Ícone de arrastar (6 pontinhos) */
+.drag-hint {
+  font-size: 1.1rem;
+  color: #ccc;
+  letter-spacing: -1px;
+  cursor: grab;
+}
+
+.file-card:hover .drag-hint {
+  color: var(--green);
+}
+
+/* Botão remover */
 .remove-btn {
   border: none;
   background: transparent;
   color: #c7a52c;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1;
   cursor: pointer;
-  padding: 0 4px;
-  flex-shrink: 0;
+  padding: 0 2px;
 }
 
-.note-side {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--green);
-  font-size: 0.95rem;
-  margin-top: 24px;
-}
-
-.note-side .brace {
-  font-size: 5rem;
-  line-height: 0.7;
-  color: var(--green);
-  font-weight: 300;
-  transform: translateY(-10px);
-}
-
-.note-side .arrow {
-  font-size: 2rem;
-  margin-left: -10px;
-}
-
+/* ==========================================
+   BOTTOM ROW
+========================================== */
 .bottom-row {
   margin-top: 18px;
   display: flex;
@@ -351,53 +322,26 @@ body {
   margin-right: 4px;
 }
 
-.hidden-input {
-  display: none;
-}
+.hidden-input { display: none; }
 
+/* ==========================================
+   RESPONSIVO
+========================================== */
 @media (max-width: 1180px) {
-  .stage {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .left-brand {
-    min-width: 0;
-  }
-
-  .card {
-    width: 100%;
-  }
+  .stage { flex-direction: column; align-items: stretch; }
+  .left-brand { min-width: 0; }
+  .card { width: 100%; }
 }
 
 @media (max-width: 860px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .title-stack {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .title-separator {
-    display: none;
-  }
-
-  .background-brand .bg-text {
-    font-size: 3.6rem;
-  }
-
-  .file-name {
-    max-width: 170px;
-  }
+  .title-stack { flex-direction: column; align-items: flex-start; }
+  .title-separator { display: none; }
+  .file-card-name { max-width: 180px; }
 }
 
 /* ==========================================
-   DARK MODE - BOTÃO E ESTILOS
+   DARK MODE
 ========================================== */
-
-/* 1. Estilos do botão (Trilho encolhido) */
 .theme-toggle {
   width: 60px;
   height: 30px;
@@ -409,7 +353,7 @@ body {
   cursor: pointer;
   z-index: 10;
   transition: background-color 0.4s;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.15);
 }
 
 .theme-toggle .indicador {
@@ -418,62 +362,50 @@ body {
   background-color: white;
   border-radius: 50%;
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: 3px; left: 3px;
   transition: left 0.4s, background-color 0.4s;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* 2. Comportamento do botão quando está Dark */
-body.dark-mode .theme-toggle {
-  background-color: var(--green); /* Fica verde quando ativo */
-}
+body.dark-mode .theme-toggle { background-color: var(--green); }
+body.dark-mode .theme-toggle .indicador { left: 33px; background-color: #121212; }
 
-body.dark-mode .theme-toggle .indicador {
-  left: 33px; /* Move a bolinha para a direita */
-  background-color: #121212;
-}
-
-/* 3. Mudanças nas cores da Aplicação inteira */
 body.dark-mode {
-  background: #121212; /* Fundo principal escuro */
+  background: #121212;
   color: #e0e0e0;
 }
 
 body.dark-mode .panel-label,
-body.dark-mode .sub-label {
-  color: #e0e0e0;
-}
+body.dark-mode .sub-label { color: #e0e0e0; }
 
-/* O texto fantasma no fundo "Soluções de Infraestrutura" */
-body.dark-mode .background-brand .bg-text {
-  color: rgba(255, 255, 255, 0.04);
-}
-
-/* A caixa branca com a lista de PDFs fica cinza escuro */
-body.dark-mode .file-list {
-  background: #1e1e1e;
-  border-color: #333;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.8);
-}
-
-body.dark-mode .file-item {
-  color: #fff;
-}
-
-/* O título principal verde fica um tom mais claro para sobressair no escuro */
-body.dark-mode .title-stack h1 {
-  color: #44ae73; 
-}
-
-/* Escurecer o Cartão Principal e as suas bordas */
 body.dark-mode .card {
   background: rgba(30, 30, 30, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255,255,255,0.05);
 }
 
-/* Ajustar o texto da nota "arquivos selecionados..." para um verde mais legível no escuro */
-body.dark-mode .note-side,
-body.dark-mode .note-side .brace {
-  color: #44ae73;
+body.dark-mode .file-card {
+  background: #242424;
+  border-color: #333;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
 }
+
+body.dark-mode .file-card:hover {
+  border-color: #444;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+}
+
+body.dark-mode .file-card.drag-over-top {
+  border-top-color: #44ae73;
+  box-shadow: 0 -2px 0 0 #44ae73, 0 3px 10px rgba(0,0,0,0.4);
+}
+
+body.dark-mode .file-card.drag-over-bottom {
+  border-bottom-color: #44ae73;
+  box-shadow: 0 2px 0 0 #44ae73, 0 3px 10px rgba(0,0,0,0.4);
+}
+
+body.dark-mode .file-card-name { color: #e0e0e0; }
+body.dark-mode .drag-hint { color: #444; }
+body.dark-mode .file-card:hover .drag-hint { color: #44ae73; }
+body.dark-mode .file-list-empty { color: #555; }
+body.dark-mode .title-stack h1 { color: #44ae73; }

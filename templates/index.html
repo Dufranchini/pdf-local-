@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Unificador de PDFs - Multiway</title>
-  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/style.css?v={{ css_v }}">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
           <div>
             <p class="sub-label">Lista de Arquivos para Junção</p>
             <div class="file-list-wrap">
-              <div class="file-list" id="fileList">
+              <div class="file-list" draggable="true" id="fileList">
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@
     </div>
   </div>
 
-  <script src="/static/script.js"></script>
+  <script src="/static/script.js?v={{ js_v }}"></script>
 </body>
 
 </html>

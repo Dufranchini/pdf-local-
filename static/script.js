@@ -4,75 +4,151 @@
 const themeToggle = document.getElementById('themeToggle');
 const body = document.body;
 
-// Verifica se o utilizador já tinha escolhido o Dark Mode na última visita
 if (localStorage.getItem('tema') === 'escuro') {
   body.classList.add('dark-mode');
 }
 
-// O seu evento de clique adaptado
 themeToggle.addEventListener('click', () => {
   body.classList.toggle('dark-mode');
-  
-  // Guarda a preferência na memória do navegador
-  if (body.classList.contains('dark-mode')) {
-    localStorage.setItem('tema', 'escuro');
-  } else {
-    localStorage.setItem('tema', 'claro');
-  }
+  localStorage.setItem('tema', body.classList.contains('dark-mode') ? 'escuro' : 'claro');
 });
 
 // ==========================================
 // Lógica Principal dos PDFs
 // ==========================================
-// Referências aos elementos do nosso ecrã (HTML)
-const fileInput = document.getElementById('pdfInput');
-const fileList = document.getElementById('fileList');
-const clearBtn = document.getElementById('clearBtn');
+const fileInput   = document.getElementById('pdfInput');
+const fileList    = document.getElementById('fileList');
+const clearBtn    = document.getElementById('clearBtn');
 const generateBtn = document.getElementById('generateBtn');
 
-// Lista que vai guardar os ficheiros selecionados em memória
-let selectedFiles = [];
+let selectedFiles  = [];
+let dragSourceIndex = null;
 
-// Função para criar o elemento visual de cada ficheiro na lista
-function createFileItem(name, index) {
-  const row = document.createElement('div');
-  row.className = 'file-item';
-  row.innerHTML = `
-      <div class="file-left">
-        <span class="pdf-icon"></span>
-        <span class="file-name"></span>
-      </div>
-      <button class="remove-btn" type="button">×</button>
-    `;
+// ==========================================
+// Renderização da lista de cards
+// ==========================================
+function renderFileList() {
+  fileList.innerHTML = '';
 
-  row.querySelector('.file-name').textContent = name;
+  if (selectedFiles.length === 0) {
+    const empty = document.createElement('div');
+    empty.className = 'file-list-empty';
+    empty.textContent = 'Nenhum arquivo adicionado ainda.';
+    fileList.appendChild(empty);
+    return;
+  }
 
-  // Adiciona o evento para remover o ficheiro específico da lista
-  row.querySelector('.remove-btn').addEventListener('click', () => {
+  selectedFiles.forEach((file, index) => {
+    fileList.appendChild(createFileCard(file, index));
+  });
+}
+
+// ==========================================
+// Criação de cada card
+// ==========================================
+function createFileCard(file, index) {
+  const card = document.createElement('div');
+  card.className = 'file-card';
+  card.draggable = true;
+  card.dataset.index = index;
+
+  // Número de ordem + ícone + nome + botão remover
+  card.innerHTML = `
+    <div class="file-card-left">
+      <span class="file-order">${index + 1}</span>
+      <span class="file-card-icon"></span>
+      <span class="file-card-name"></span>
+    </div>
+    <div class="file-card-right">
+      <span class="drag-hint">⠿</span>
+      <button class="remove-btn" type="button" title="Remover">×</button>
+    </div>
+  `;
+
+  card.querySelector('.file-card-name').textContent = file.name;
+
+  card.querySelector('.remove-btn').addEventListener('click', (e) => {
+    e.stopPropagation(); // evita disparar eventos de drag ao clicar no botão
     selectedFiles.splice(index, 1);
     renderFileList();
   });
 
-  return row;
-}
+  // ── Eventos de Drag ──────────────────────────────────────
 
-// Função para atualizar a lista de ficheiros no ecrã
-function renderFileList() {
-  fileList.innerHTML = '';
-  selectedFiles.forEach((file, index) => {
-    fileList.appendChild(createFileItem(file.name, index));
+  card.addEventListener('dragstart', (e) => {
+    dragSourceIndex = index;
+    e.dataTransfer.effectAllowed = 'move';
+    // Delay para o "fantasma" nativo do browser ser capturado antes de aplicar o estilo
+    setTimeout(() => card.classList.add('dragging'), 0);
   });
+
+  card.addEventListener('dragend', () => {
+    card.classList.remove('dragging');
+    // Remove highlight de todos os cards ao terminar
+    document.querySelectorAll('.file-card').forEach(c => c.classList.remove('drag-over-top', 'drag-over-bottom'));
+    dragSourceIndex = null;
+  });
+
+  card.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    if (dragSourceIndex === null || dragSourceIndex === index) return;
+
+    // Descobre se o cursor está na metade de cima ou de baixo do card
+    const rect = card.getBoundingClientRect();
+    const meio = rect.top + rect.height / 2;
+
+    card.classList.remove('drag-over-top', 'drag-over-bottom');
+    if (e.clientY < meio) {
+      card.classList.add('drag-over-top');
+    } else {
+      card.classList.add('drag-over-bottom');
+    }
+  });
+
+  card.addEventListener('dragleave', (e) => {
+    // Só remove o highlight se o cursor realmente saiu do card
+    // (dragleave dispara ao entrar em elementos filhos — verificamos o relatedTarget)
+    if (!card.contains(e.relatedTarget)) {
+      card.classList.remove('drag-over-top', 'drag-over-bottom');
+    }
+  });
+
+  card.addEventListener('drop', (e) => {
+    e.preventDefault();
+    if (dragSourceIndex === null || dragSourceIndex === index) return;
+
+    const rect = card.getBoundingClientRect();
+    const meio = rect.top + rect.height / 2;
+    const inserirAntes = e.clientY < meio;
+
+    // Calcula o índice de destino com base em onde o cursor soltou
+    let destinoIndex = inserirAntes ? index : index + 1;
+
+    // Remove o item da posição original
+    const [movido] = selectedFiles.splice(dragSourceIndex, 1);
+
+    // Ajusta o destino após a remoção (o array encolheu em 1)
+    if (dragSourceIndex < destinoIndex) {
+      destinoIndex--;
+    }
+
+    selectedFiles.splice(destinoIndex, 0, movido);
+    renderFileList();
+  });
+
+  return card;
 }
 
-// Evento disparado quando o utilizador escolhe ficheiros no computador
+// ==========================================
+// Eventos de controle da lista
+// ==========================================
 fileInput.addEventListener('change', (event) => {
   const files = Array.from(event.target.files || []);
   selectedFiles.push(...files);
   renderFileList();
-  fileInput.value = ''; // Limpa o input para permitir selecionar o mesmo ficheiro novamente
+  fileInput.value = '';
 });
 
-// Evento para limpar toda a lista
 clearBtn.addEventListener('click', () => {
   selectedFiles = [];
   renderFileList();
@@ -82,36 +158,27 @@ clearBtn.addEventListener('click', () => {
 // Evento principal: Juntar e Gerar
 // ==========================================
 generateBtn.addEventListener('click', async () => {
-  // Verifica se há ficheiros para processar
   if (!selectedFiles.length) {
     alert('Por favor, adicione pelo menos um ficheiro.');
     return;
   }
 
-  // 1. CAMADA DE SEGURANÇA FRONTEND (Bloqueio de 10MB)
-  const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB em bytes
+  const MAX_FILE_SIZE = 10 * 1024 * 1024;
   let totalSize = 0;
-  selectedFiles.forEach(file => {
-    totalSize += file.size;
-  });
+  selectedFiles.forEach(file => { totalSize += file.size; });
 
   if (totalSize > MAX_FILE_SIZE) {
     alert('⚠️ O tamanho total dos arquivos excede o limite de 10MB. Por favor, remova alguns arquivos e tente novamente.');
-    return; // Corta a execução aqui, nada é apagado e o servidor nem é incomodado!
+    return;
   }
 
-  // 2. Preparar os dados para enviar ao servidor
   const formData = new FormData();
-  selectedFiles.forEach(file => {
-    formData.append('files', file);
-  });
+  selectedFiles.forEach(file => { formData.append('files', file); });
 
   try {
-    // Desativa o botão para evitar cliques duplos e avisa que está a trabalhar
-    generateBtn.disabled = true;
+    generateBtn.disabled    = true;
     generateBtn.textContent = 'A processar...';
 
-    // 3. Enviar os ficheiros para o nosso servidor
     const response = await fetch('/api/pdf/merge', {
       method: 'POST',
       body: formData
@@ -119,40 +186,29 @@ generateBtn.addEventListener('click', async () => {
 
     const data = await response.json();
 
-    // Verifica se o servidor devolveu algum erro
     if (!response.ok) {
       throw new Error(data.detail || 'Erro ao gerar o PDF.');
     }
 
-    // 4. Descarregar o PDF final gerado
     const downloadResponse = await fetch(data.download_url);
     if (!downloadResponse.ok) {
       throw new Error('Erro ao descarregar o PDF gerado.');
     }
 
     const blob = await downloadResponse.blob();
-
-    // 5. CAMADA DE SEGURANÇA DO DOWNLOAD (O Padrão Blindado)
-    // Usando este método, o navegador trata do download. 
-    // Se um arquivo com o mesmo nome existir, o navegador cria "Unificado (1).pdf" 
-    // ou, se configurado para perguntar, só sobrescreve o arquivo no fim de tudo, com sucesso garantido.
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'Mway_unificado.pdf'; // Nome sugerido para o arquivo baixado
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement('a');
+    a.href     = url;
+    a.download = 'Mway_unificado.pdf';
     document.body.appendChild(a);
     a.click();
-    
-    // Limpeza
     a.remove();
     URL.revokeObjectURL(url);
 
   } catch (error) {
-    // Mostra um alerta caso algo corra mal durante o processo
     alert(error.message);
   } finally {
-    // Restaura o botão ao estado original, independentemente de sucesso ou erro
-    generateBtn.disabled = false;
+    generateBtn.disabled    = false;
     generateBtn.textContent = '🔗 Juntar e Gerar PDF Unificado';
   }
 });
