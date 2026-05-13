@@ -2,11 +2,12 @@ import subprocess
 import os
 import platform
 import openpyxl
-
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Carrega as variáveis de ambiente do ficheiro .env para a memória do Python
+from logger import get_logger
+log = get_logger("office_converter")
+
 load_dotenv()
 
 # <-- 2. NOVA FUNÇÃO DE PRÉ-PROCESSAMENTO DO EXCEL
@@ -58,6 +59,8 @@ def convert_office_to_pdf(input_path: str, output_dir: str) -> str:
         )
 
     try:
+        log.info(f"Iniciando conversão LibreOffice: {input_path}")
+
         # <-- 3. A MÁGICA ACONTECE AQUI ANTES DO LIBREOFFICE LER O FICHEIRO
         # Verificamos se é um ficheiro Excel moderno (.xlsx)
         if input_path.lower().endswith(".xlsx"):
@@ -83,6 +86,7 @@ def convert_office_to_pdf(input_path: str, output_dir: str) -> str:
         if not os.path.exists(output_pdf_path):
             raise FileNotFoundError("A conversão falhou: o ficheiro PDF não foi encontrado no diretório de destino.")
             
+        log.info(f"LibreOffice concluiu: {output_pdf_path}")
         return output_pdf_path
         
     except subprocess.CalledProcessError as e:

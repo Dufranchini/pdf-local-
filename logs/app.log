@@ -1,58 +1,151 @@
-2026-05-06 16:42:56 | INFO     | main | Página inicial acessada
-2026-05-06 16:43:27 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 3
-2026-05-06 16:43:27 | DEBUG    | pdf_router | Processando arquivo: ebook_ada8496c-d114-42c7-a45e-f693687feb2d.pdf | Tipo: .pdf
-2026-05-06 16:43:27 | DEBUG    | pdf_router | Processando arquivo: imagem.png | Tipo: .png
-2026-05-06 16:43:27 | DEBUG    | pdf_router | Processando arquivo: Information System.xlsx | Tipo: .xlsx
-2026-05-06 16:43:27 | ERROR    | pdf_router | Erro interno inesperado: Erro inesperado ao converter documento Office: [WinError 2] O sistema não pode encontrar o arquivo especificado
+2026-05-13 09:47:18 | INFO     | main | Acessando a página inicial
+2026-05-13 09:48:00 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 4
+2026-05-13 09:48:00 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (5).pdf | Tipo: .pdf
+2026-05-13 09:48:01 | DEBUG    | pdf_router | PDF direto: Mway_unificado (5).pdf
+2026-05-13 09:48:01 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
+2026-05-13 09:48:01 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
+2026-05-13 09:48:01 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
+2026-05-13 09:48:01 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
+2026-05-13 09:48:01 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
+2026-05-13 09:48:01 | DEBUG    | pdf_router | Processando arquivo: npp.8.9.2.Installer.x64.exe | Tipo: .exe
+2026-05-13 09:48:01 | WARNING  | pdf_router | Formato não suportado recebido: .exe
+2026-05-13 10:06:36 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 3
+2026-05-13 10:06:36 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
+2026-05-13 10:06:36 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
+2026-05-13 10:06:36 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
+2026-05-13 10:06:36 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
+2026-05-13 10:06:36 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
+2026-05-13 10:06:36 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (5).pdf | Tipo: .pdf
+2026-05-13 10:06:36 | DEBUG    | pdf_router | PDF direto: Mway_unificado (5).pdf
+2026-05-13 10:06:36 | INFO     | pdf_router | Iniciando merge de 3 PDFs
+2026-05-13 10:06:36 | INFO     | pdf_router | Merge concluído com sucesso | Arquivo: efabac8937d14ac8b2bf60d9a4cafa6b.pdf
+2026-05-13 10:06:36 | INFO     | pdf_router | Download solicitado | file_id: efabac8937d14ac8b2bf60d9a4cafa6b.pdf
+2026-05-13 10:06:36 | INFO     | pdf_router | Download iniciado | Arquivo: efabac8937d14ac8b2bf60d9a4cafa6b.pdf
+2026-05-13 10:23:51 | INFO     | main | Acessando a página inicial
+2026-05-13 10:24:45 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 6
+2026-05-13 10:24:45 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (7).pdf | Tipo: .pdf
+2026-05-13 10:24:45 | DEBUG    | pdf_router | PDF direto: Mway_unificado (7).pdf
+2026-05-13 10:24:45 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
+2026-05-13 10:24:45 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
+2026-05-13 10:24:45 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
+2026-05-13 10:24:45 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
+2026-05-13 10:24:45 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
+2026-05-13 10:24:45 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (5).pdf | Tipo: .pdf
+2026-05-13 10:24:45 | DEBUG    | pdf_router | PDF direto: Mway_unificado (5).pdf
+2026-05-13 10:24:45 | DEBUG    | pdf_router | Processando arquivo: imagem (1).png | Tipo: .png
+2026-05-13 10:24:45 | INFO     | pdf_router | Convertendo imagem: imagem (1).png
+2026-05-13 10:24:45 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (1).png
+2026-05-13 10:24:45 | DEBUG    | pdf_router | Processando arquivo: ebook_ada8496c-d114-42c7-a45e-f693687feb2d.pdf | Tipo: .pdf
+2026-05-13 10:24:45 | DEBUG    | pdf_router | PDF direto: ebook_ada8496c-d114-42c7-a45e-f693687feb2d.pdf
+2026-05-13 10:24:45 | INFO     | pdf_router | Iniciando merge de 6 PDFs
+2026-05-13 10:24:46 | ERROR    | pdf_router | Erro interno inesperado: Erro ao processar um arquivo: Um dos arquivos está protegido com senha e não pode ser unificado.
 Traceback (most recent call last):
-  File "C:\Users\CarlosMoreira\OneDrive - M.Way Industria de Infraestrutura Ltda\Área de Trabalho\APP_MWAY_LINUX\services\conversion\office_converter.py", line 82, in convert_office_to_pdf
-    subprocess.run(comando, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\CarlosMoreira\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 554, in run
-    with Popen(*popenargs, **kwargs) as process:
-         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\CarlosMoreira\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1039, in __init__
-    self._execute_child(args, executable, preexec_fn, close_fds,
-    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                        pass_fds, cwd, env,
-                        ^^^^^^^^^^^^^^^^^^^
-    ...<5 lines>...
-                        gid, gids, uid, umask,
-                        ^^^^^^^^^^^^^^^^^^^^^^
-                        start_new_session, process_group)
-                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\CarlosMoreira\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1554, in _execute_child
-    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
-                       ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
-                             # no special security
-                             ^^^^^^^^^^^^^^^^^^^^^
-    ...<4 lines>...
-                             cwd,
-                             ^^^^
-                             startupinfo)
-                             ^^^^^^^^^^^^
-FileNotFoundError: [WinError 2] O sistema não pode encontrar o arquivo especificado
+  File "/home/carlos/mway_pdf_tool/services/pdf/merge.py", line 18, in merge_pdfs
+    raise Exception("Um dos arquivos está protegido com senha e não pode ser unificado.")
+Exception: Um dos arquivos está protegido com senha e não pode ser unificado.
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "C:\Users\CarlosMoreira\OneDrive - M.Way Industria de Infraestrutura Ltda\Área de Trabalho\APP_MWAY_LINUX\routers\pdf_router.py", line 81, in merge_files
-    await run_in_threadpool(convert_office_to_pdf, str(temp_path), str(output_pdf))
-  File "C:\Users\CarlosMoreira\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\concurrency.py", line 32, in run_in_threadpool
+  File "/home/carlos/mway_pdf_tool/routers/pdf_router.py", line 105, in merge_files
+    await run_in_threadpool(merge_pdfs, pdf_convertido, str(output_file))
+  File "/home/carlos/mway_pdf_tool/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
     return await anyio.to_thread.run_sync(func)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\CarlosMoreira\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\to_thread.py", line 63, in run_sync
+  File "/home/carlos/mway_pdf_tool/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 63, in run_sync
     return await get_async_backend().run_sync_in_worker_thread(
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "C:\Users\CarlosMoreira\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 2518, in run_sync_in_worker_thread
+  File "/home/carlos/mway_pdf_tool/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2518, in run_sync_in_worker_thread
     return await future
            ^^^^^^^^^^^^
-  File "C:\Users\CarlosMoreira\AppData\Local\Programs\Python\Python313\Lib\site-packages\anyio\_backends\_asyncio.py", line 1002, in run
+  File "/home/carlos/mway_pdf_tool/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1002, in run
     result = context.run(func, *args)
-  File "C:\Users\CarlosMoreira\OneDrive - M.Way Industria de Infraestrutura Ltda\Área de Trabalho\APP_MWAY_LINUX\services\conversion\office_converter.py", line 97, in convert_office_to_pdf
-    raise Exception(f"Erro inesperado ao converter documento Office: {str(e)}")
-Exception: Erro inesperado ao converter documento Office: [WinError 2] O sistema não pode encontrar o arquivo especificado
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/mway_pdf_tool/services/pdf/merge.py", line 31, in merge_pdfs
+    raise Exception(f"Erro ao processar um arquivo: {str(e)}")
+Exception: Erro ao processar um arquivo: Um dos arquivos está protegido com senha e não pode ser unificado.
+2026-05-13 10:25:16 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 1
+2026-05-13 10:25:16 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (7).pdf | Tipo: .pdf
+2026-05-13 10:25:16 | DEBUG    | pdf_router | PDF direto: Mway_unificado (7).pdf
+2026-05-13 10:25:16 | INFO     | pdf_router | Iniciando merge de 1 PDFs
+2026-05-13 10:25:16 | INFO     | pdf_router | Merge concluído com sucesso | Arquivo: 5f9b1904b2054cd19e50f59a9481977c.pdf
+2026-05-13 10:25:16 | INFO     | pdf_router | Download solicitado | file_id: 5f9b1904b2054cd19e50f59a9481977c.pdf
+2026-05-13 10:25:16 | INFO     | pdf_router | Download iniciado | Arquivo: 5f9b1904b2054cd19e50f59a9481977c.pdf
+2026-05-13 10:27:06 | INFO     | main | Acessando a página inicial
+2026-05-13 10:27:15 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 4
+2026-05-13 10:27:15 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (8).pdf | Tipo: .pdf
+2026-05-13 10:27:15 | DEBUG    | pdf_router | PDF direto: Mway_unificado (8).pdf
+2026-05-13 10:27:15 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (7).pdf | Tipo: .pdf
+2026-05-13 10:27:15 | DEBUG    | pdf_router | PDF direto: Mway_unificado (7).pdf
+2026-05-13 10:27:15 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
+2026-05-13 10:27:15 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
+2026-05-13 10:27:16 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
+2026-05-13 10:27:16 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
+2026-05-13 10:27:16 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
+2026-05-13 10:27:16 | INFO     | pdf_router | Iniciando merge de 4 PDFs
+2026-05-13 10:27:16 | INFO     | pdf_router | Merge concluído com sucesso | Arquivo: 114848274a214c4aa5dce2482306ed5e.pdf
+2026-05-13 10:27:16 | INFO     | pdf_router | Download solicitado | file_id: 114848274a214c4aa5dce2482306ed5e.pdf
+2026-05-13 10:27:16 | INFO     | pdf_router | Download iniciado | Arquivo: 114848274a214c4aa5dce2482306ed5e.pdf
+2026-05-13 10:27:54 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 7
+2026-05-13 10:27:54 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (8).pdf | Tipo: .pdf
+2026-05-13 10:27:54 | DEBUG    | pdf_router | PDF direto: Mway_unificado (8).pdf
+2026-05-13 10:27:54 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (7).pdf | Tipo: .pdf
+2026-05-13 10:27:54 | DEBUG    | pdf_router | PDF direto: Mway_unificado (7).pdf
+2026-05-13 10:27:54 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
+2026-05-13 10:27:54 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
+2026-05-13 10:27:54 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
+2026-05-13 10:27:54 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
+2026-05-13 10:27:54 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
+2026-05-13 10:27:54 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (9).pdf | Tipo: .pdf
+2026-05-13 10:27:54 | DEBUG    | pdf_router | PDF direto: Mway_unificado (9).pdf
+2026-05-13 10:27:54 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
+2026-05-13 10:27:54 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
+2026-05-13 10:27:54 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
+2026-05-13 10:27:54 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
+2026-05-13 10:27:54 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
+2026-05-13 10:27:54 | INFO     | pdf_router | Iniciando merge de 7 PDFs
+2026-05-13 10:27:55 | INFO     | pdf_router | Merge concluído com sucesso | Arquivo: 3456cf0ef9414401bd34d104684d0534.pdf
+2026-05-13 10:27:55 | INFO     | pdf_router | Download solicitado | file_id: 3456cf0ef9414401bd34d104684d0534.pdf
+2026-05-13 10:27:55 | INFO     | pdf_router | Download iniciado | Arquivo: 3456cf0ef9414401bd34d104684d0534.pdf
+2026-05-13 10:32:03 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 7
+2026-05-13 10:32:03 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (8).pdf | Tipo: .pdf
+2026-05-13 10:32:03 | DEBUG    | pdf_router | PDF direto: Mway_unificado (8).pdf
+2026-05-13 10:32:03 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (7).pdf | Tipo: .pdf
+2026-05-13 10:32:03 | DEBUG    | pdf_router | PDF direto: Mway_unificado (7).pdf
+2026-05-13 10:32:03 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
+2026-05-13 10:32:03 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
+2026-05-13 10:32:03 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
+2026-05-13 10:32:03 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
+2026-05-13 10:32:03 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
+2026-05-13 10:32:03 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (9).pdf | Tipo: .pdf
+2026-05-13 10:32:03 | DEBUG    | pdf_router | PDF direto: Mway_unificado (9).pdf
+2026-05-13 10:32:03 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
+2026-05-13 10:32:03 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
+2026-05-13 10:32:03 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
+2026-05-13 10:32:03 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
+2026-05-13 10:32:03 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
+2026-05-13 10:32:03 | INFO     | pdf_router | Iniciando merge de 7 PDFs
+2026-05-13 10:32:04 | INFO     | pdf_router | Merge concluído com sucesso | Arquivo: 06acf7a4863b44069c798e901a265989.pdf
+2026-05-13 10:32:04 | INFO     | pdf_router | Download solicitado | file_id: 06acf7a4863b44069c798e901a265989.pdf
+2026-05-13 10:32:04 | INFO     | pdf_router | Download iniciado | Arquivo: 06acf7a4863b44069c798e901a265989.pdf
+2026-05-13 10:32:14 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 7
+2026-05-13 10:32:14 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (8).pdf | Tipo: .pdf
+2026-05-13 10:32:14 | DEBUG    | pdf_router | PDF direto: Mway_unificado (8).pdf
+2026-05-13 10:32:14 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (7).pdf | Tipo: .pdf
+2026-05-13 10:32:14 | DEBUG    | pdf_router | PDF direto: Mway_unificado (7).pdf
+2026-05-13 10:32:14 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
+2026-05-13 10:32:14 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
+2026-05-13 10:32:14 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
+2026-05-13 10:32:14 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
+2026-05-13 10:32:14 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
+2026-05-13 10:32:14 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (9).pdf | Tipo: .pdf
+2026-05-13 10:32:14 | DEBUG    | pdf_router | PDF direto: Mway_unificado (9).pdf
+2026-05-13 10:32:14 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
+2026-05-13 10:32:14 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
+2026-05-13 10:32:14 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
+2026-05-13 10:32:14 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
+2026-05-13 10:32:14 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
+2026-05-13 10:32:14 | INFO     | pdf_router | Iniciando merge de 7 PDFs
+2026-05-13 10:32:14 | INFO     | pdf_router | Merge concluído com sucesso | Arquivo: 52a0cdf122f640a59b8860933de7f18d.pdf
+2026-05-13 10:32:14 | INFO     | pdf_router | Download solicitado | file_id: 52a0cdf122f640a59b8860933de7f18d.pdf
+2026-05-13 10:32:14 | INFO     | pdf_router | Download iniciado | Arquivo: 52a0cdf122f640a59b8860933de7f18d.pdf

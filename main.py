@@ -7,8 +7,12 @@ from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from starlette.requests import Request
 from routers.pdf_router import router as pdf_router
+from logger import get_logger
+
+log = get_logger("main")
 
 app = FastAPI()
+
 app.include_router(pdf_router, prefix="/api/pdf", tags=["pdf"])
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
@@ -20,6 +24,7 @@ def file_hash(path: str) -> str:
 
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
+    log.info("Acessando a página inicial")
     return templates.TemplateResponse(
         request=request,
         name="index.html",
