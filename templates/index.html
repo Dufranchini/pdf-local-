@@ -15,7 +15,6 @@
       <div class="indicador"></div>
     </div>
 
-
     <div class="stage">
       <section class="left-brand">
         <div class="logo-box">
@@ -23,7 +22,7 @@
         </div>
         <div class="title-stack">
           <div class="title-separator"></div>
-          <h1>Unificador de PDFs</h1>
+          <h1>PDF Tools</h1>
         </div>
       </section>
 
@@ -32,8 +31,7 @@
           <div>
             <p class="sub-label">Lista de Arquivos para Junção</p>
             <div class="file-list-wrap">
-              <div class="file-list" draggable="true" id="fileList">
-              </div>
+              <div class="file-list" id="fileList"></div>
             </div>
           </div>
           <div></div>
@@ -50,13 +48,84 @@
           <div class="actions-right">
             <span class="panel-label">Painel de Ação</span>
             <button class="btn btn-green" id="generateBtn" type="button">🔗 Juntar e Gerar PDF Unificado</button>
+            <button class="btn btn-blue" id="convertToDocBtn" type="button">📄 Conversor para Doc</button>
+            <button class="btn btn-purple" id="compressBtn" type="button">📦 Comprimir PDF</button>
           </div>
         </div>
       </section>
     </div>
   </div>
 
+  <!-- ══════════════════════════════════════════
+       MODAL — Conversor PDF → DOCX
+  ══════════════════════════════════════════ -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 class="modal-title">Conversor PDF → Word</h2>
+        <button class="modal-close" id="modalClose" title="Fechar">×</button>
+      </div>
+      <p class="modal-desc">
+        Selecione um arquivo <strong>.pdf</strong> para convertê-lo em um documento Word <strong>(.docx)</strong>.
+      </p>
+      <label class="drop-zone" for="docInput" id="dropZone">
+        <span class="drop-zone-icon">📂</span>
+        <span class="drop-zone-text" id="dropZoneText">Clique para selecionar ou arraste o PDF aqui</span>
+        <input class="hidden-input" id="docInput" type="file" accept=".pdf" />
+      </label>
+      <div class="modal-footer">
+        <button class="btn btn-green" id="convertBtn" type="button" disabled>
+          ⚙️ Converter para Word
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       MODAL — Compressor PDF
+  ══════════════════════════════════════════ -->
+  <div class="modal-overlay" id="compressModalOverlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 class="modal-title">Compressor de PDF</h2>
+        <button class="modal-close" id="compressModalClose" title="Fechar">×</button>
+      </div>
+      <p class="modal-desc">
+        Selecione um arquivo <strong>.pdf</strong> para reduzir o seu tamanho.
+        A qualidade visual é preservada. Metadados (autor, criador, datas) serão removidos
+        do arquivo final por privacidade.
+      </p>
+      <label class="drop-zone" for="compressInput" id="compressDropZone">
+        <span class="drop-zone-icon">📦</span>
+        <span class="drop-zone-text" id="compressDropZoneText">Clique para selecionar ou arraste o PDF aqui</span>
+        <input class="hidden-input" id="compressInput" type="file" accept=".pdf" />
+      </label>
+
+      <!-- Painel de resultado (escondido até a compressão acontecer) -->
+      <div class="compress-result" id="compressResult" style="display: none;">
+        <div class="compress-stats">
+          <div class="stat-block">
+            <span class="stat-label">Tamanho original</span>
+            <span class="stat-value" id="statOriginal">—</span>
+          </div>
+          <div class="stat-arrow">→</div>
+          <div class="stat-block">
+            <span class="stat-label">Após compressão</span>
+            <span class="stat-value" id="statCompressed">—</span>
+          </div>
+        </div>
+        <div class="stat-reduction" id="statReduction">—</div>
+        <div class="stat-note" id="statNote"></div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-purple" id="doCompressBtn" type="button" disabled>
+          ⚙️ Comprimir PDF
+        </button>
+      </div>
+    </div>
+  </div>
+
   <script src="/static/script.js?v={{ js_v }}"></script>
 </body>
-
 </html>

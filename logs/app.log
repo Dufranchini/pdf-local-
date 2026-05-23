@@ -1,151 +1,800 @@
-2026-05-13 09:47:18 | INFO     | main | Acessando a página inicial
-2026-05-13 09:48:00 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 4
-2026-05-13 09:48:00 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (5).pdf | Tipo: .pdf
-2026-05-13 09:48:01 | DEBUG    | pdf_router | PDF direto: Mway_unificado (5).pdf
-2026-05-13 09:48:01 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
-2026-05-13 09:48:01 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
-2026-05-13 09:48:01 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
-2026-05-13 09:48:01 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
-2026-05-13 09:48:01 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
-2026-05-13 09:48:01 | DEBUG    | pdf_router | Processando arquivo: npp.8.9.2.Installer.x64.exe | Tipo: .exe
-2026-05-13 09:48:01 | WARNING  | pdf_router | Formato não suportado recebido: .exe
-2026-05-13 10:06:36 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 3
-2026-05-13 10:06:36 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
-2026-05-13 10:06:36 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
-2026-05-13 10:06:36 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
-2026-05-13 10:06:36 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
-2026-05-13 10:06:36 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
-2026-05-13 10:06:36 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (5).pdf | Tipo: .pdf
-2026-05-13 10:06:36 | DEBUG    | pdf_router | PDF direto: Mway_unificado (5).pdf
-2026-05-13 10:06:36 | INFO     | pdf_router | Iniciando merge de 3 PDFs
-2026-05-13 10:06:36 | INFO     | pdf_router | Merge concluído com sucesso | Arquivo: efabac8937d14ac8b2bf60d9a4cafa6b.pdf
-2026-05-13 10:06:36 | INFO     | pdf_router | Download solicitado | file_id: efabac8937d14ac8b2bf60d9a4cafa6b.pdf
-2026-05-13 10:06:36 | INFO     | pdf_router | Download iniciado | Arquivo: efabac8937d14ac8b2bf60d9a4cafa6b.pdf
-2026-05-13 10:23:51 | INFO     | main | Acessando a página inicial
-2026-05-13 10:24:45 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 6
-2026-05-13 10:24:45 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (7).pdf | Tipo: .pdf
-2026-05-13 10:24:45 | DEBUG    | pdf_router | PDF direto: Mway_unificado (7).pdf
-2026-05-13 10:24:45 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
-2026-05-13 10:24:45 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
-2026-05-13 10:24:45 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
-2026-05-13 10:24:45 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
-2026-05-13 10:24:45 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
-2026-05-13 10:24:45 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (5).pdf | Tipo: .pdf
-2026-05-13 10:24:45 | DEBUG    | pdf_router | PDF direto: Mway_unificado (5).pdf
-2026-05-13 10:24:45 | DEBUG    | pdf_router | Processando arquivo: imagem (1).png | Tipo: .png
-2026-05-13 10:24:45 | INFO     | pdf_router | Convertendo imagem: imagem (1).png
-2026-05-13 10:24:45 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (1).png
-2026-05-13 10:24:45 | DEBUG    | pdf_router | Processando arquivo: ebook_ada8496c-d114-42c7-a45e-f693687feb2d.pdf | Tipo: .pdf
-2026-05-13 10:24:45 | DEBUG    | pdf_router | PDF direto: ebook_ada8496c-d114-42c7-a45e-f693687feb2d.pdf
-2026-05-13 10:24:45 | INFO     | pdf_router | Iniciando merge de 6 PDFs
-2026-05-13 10:24:46 | ERROR    | pdf_router | Erro interno inesperado: Erro ao processar um arquivo: Um dos arquivos está protegido com senha e não pode ser unificado.
+2026-05-13 11:20:21 | INFO     | main | Acessando a página inicial
+2026-05-13 11:20:38 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 3
+2026-05-13 11:20:38 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (8).pdf | Tipo: .pdf
+2026-05-13 11:20:38 | DEBUG    | pdf_router | PDF direto: Mway_unificado (8).pdf
+2026-05-13 11:20:38 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (7).pdf | Tipo: .pdf
+2026-05-13 11:20:38 | DEBUG    | pdf_router | PDF direto: Mway_unificado (7).pdf
+2026-05-13 11:20:38 | DEBUG    | pdf_router | Processando arquivo: imagem (1).png | Tipo: .png
+2026-05-13 11:20:38 | INFO     | pdf_router | Convertendo imagem: imagem (1).png
+2026-05-13 11:20:38 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (1).png
+2026-05-13 11:20:38 | INFO     | pdf_router | Iniciando merge de 3 PDFs
+2026-05-13 11:20:38 | INFO     | pdf_router | Merge concluído com sucesso | Arquivo: aa11d155189c4228890f3483592805fc.pdf
+2026-05-13 11:20:38 | INFO     | pdf_router | Download solicitado | file_id: aa11d155189c4228890f3483592805fc.pdf
+2026-05-13 11:20:38 | INFO     | pdf_router | Download iniciado | Arquivo: aa11d155189c4228890f3483592805fc.pdf
+2026-05-13 12:10:44 | INFO     | main | Acessando a página inicial
+2026-05-13 12:11:21 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 2
+2026-05-13 12:11:21 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (13) - Copia.pdf | Tipo: .pdf
+2026-05-13 12:11:21 | DEBUG    | pdf_router | PDF direto: Mway_unificado (13) - Copia.pdf
+2026-05-13 12:11:21 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (13).pdf | Tipo: .pdf
+2026-05-13 12:11:21 | DEBUG    | pdf_router | PDF direto: Mway_unificado (13).pdf
+2026-05-13 12:11:21 | INFO     | pdf_router | Iniciando merge de 2 PDFs
+2026-05-13 12:11:22 | INFO     | pdf_router | Merge concluído com sucesso | Arquivo: e36c508e24bc4af298cd0617155c4b4f.pdf
+2026-05-13 12:11:22 | INFO     | pdf_router | Download solicitado | file_id: e36c508e24bc4af298cd0617155c4b4f.pdf
+2026-05-13 12:11:22 | INFO     | pdf_router | Download iniciado | Arquivo: e36c508e24bc4af298cd0617155c4b4f.pdf
+2026-05-13 12:13:35 | INFO     | main | Acessando a página inicial
+2026-05-13 12:14:05 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 3
+2026-05-13 12:14:05 | DEBUG    | pdf_router | Processando arquivo: senha.C | Tipo: .c
+2026-05-13 12:14:05 | WARNING  | pdf_router | Formato não suportado recebido: .c
+2026-05-13 12:14:14 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 3
+2026-05-13 12:14:14 | DEBUG    | pdf_router | Processando arquivo: senha.exe | Tipo: .exe
+2026-05-13 12:14:14 | WARNING  | pdf_router | Formato não suportado recebido: .exe
+2026-05-15 10:32:41 | INFO     | main | Acessando a página inicial
+2026-05-15 10:33:55 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 3
+2026-05-15 10:33:55 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
+2026-05-15 10:33:55 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
+2026-05-15 10:33:55 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (5).pdf | Tipo: .pdf
+2026-05-15 10:33:55 | DEBUG    | pdf_router | PDF direto: Mway_unificado (5).pdf
+2026-05-15 10:33:55 | DEBUG    | pdf_router | Processando arquivo: imagem (1).png | Tipo: .png
+2026-05-15 10:33:55 | INFO     | pdf_router | Convertendo imagem: imagem (1).png
+2026-05-15 10:33:55 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (1).png
+2026-05-15 10:33:55 | INFO     | pdf_router | Iniciando merge de 3 PDFs
+2026-05-15 10:33:55 | INFO     | pdf_router | Merge concluído com sucesso | Arquivo: 2af0a46437ef4e649cdf533011568e26.pdf
+2026-05-15 10:33:55 | INFO     | pdf_router | Download solicitado | file_id: 2af0a46437ef4e649cdf533011568e26.pdf
+2026-05-15 10:33:55 | INFO     | pdf_router | Download iniciado | Arquivo: 2af0a46437ef4e649cdf533011568e26.pdf
+2026-05-18 14:18:05 | INFO     | main | Acessando a página inicial
+2026-05-18 14:19:10 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Financial ASU 2014-09_Section A.pdf
+2026-05-18 14:19:10 | DEBUG    | pdf_router | PDF salvo temporariamente: output/d5d503454a074085b90be01fbf608392.pdf
+2026-05-18 14:19:10 | INFO     | word_converter | Iniciando conversão PDF → DOCX: output/d5d503454a074085b90be01fbf608392.pdf
+2026-05-18 14:19:10 | ERROR    | word_converter | LibreOffice falhou para output/d5d503454a074085b90be01fbf608392.pdf: Command '['libreoffice', '--headless', '--convert-to', 'docx', '--infilter', 'impress_pdf_import', '--outdir', 'output', 'output/d5d503454a074085b90be01fbf608392.pdf']' returned non-zero exit status 1.
+2026-05-18 14:19:10 | ERROR    | pdf_router | Erro na conversão PDF→DOCX: Falha na execução do LibreOffice: Command '['libreoffice', '--headless', '--convert-to', 'docx', '--infilter', 'impress_pdf_import', '--outdir', 'output', 'output/d5d503454a074085b90be01fbf608392.pdf']' returned non-zero exit status 1.
 Traceback (most recent call last):
-  File "/home/carlos/mway_pdf_tool/services/pdf/merge.py", line 18, in merge_pdfs
+  File "/home/carlos/APP_MWAY_LINUX/services/conversion/word_converter.py", line 51, in convert_pdf_to_doc
+    subprocess.run(
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['libreoffice', '--headless', '--convert-to', 'docx', '--infilter', 'impress_pdf_import', '--outdir', 'output', 'output/d5d503454a074085b90be01fbf608392.pdf']' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/carlos/APP_MWAY_LINUX/routers/pdf_router.py", line 154, in convert_to_doc
+    docx_path = await run_in_threadpool(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/services/conversion/word_converter.py", line 78, in convert_pdf_to_doc
+    raise Exception(f"Falha na execução do LibreOffice: {erro_msg}")
+Exception: Falha na execução do LibreOffice: Command '['libreoffice', '--headless', '--convert-to', 'docx', '--infilter', 'impress_pdf_import', '--outdir', 'output', 'output/d5d503454a074085b90be01fbf608392.pdf']' returned non-zero exit status 1.
+2026-05-18 14:22:34 | INFO     | main | Acessando a página inicial
+2026-05-18 14:22:46 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 3
+2026-05-18 14:22:46 | DEBUG    | pdf_router | Processando: Financial ASU 2014-09_Section A.pdf | Tipo: .pdf
+2026-05-18 14:22:46 | DEBUG    | pdf_router | PDF direto: Financial ASU 2014-09_Section A.pdf
+2026-05-18 14:22:46 | DEBUG    | pdf_router | Processando: Visitas INPE e LNCC.pptx | Tipo: .pptx
+2026-05-18 14:22:46 | INFO     | pdf_router | Convertendo Office: Visitas INPE e LNCC.pptx
+2026-05-18 14:22:46 | INFO     | office_converter | Iniciando conversão LibreOffice: /tmp/tmpg6ok0gow/Visitas INPE e LNCC.pptx
+2026-05-18 14:22:48 | INFO     | office_converter | LibreOffice concluiu: /tmp/tmpg6ok0gow/Visitas INPE e LNCC.pdf
+2026-05-18 14:22:48 | INFO     | pdf_router | Office convertido: Visitas INPE e LNCC.pptx
+2026-05-18 14:22:48 | DEBUG    | pdf_router | Processando: Captura de tela 2026-05-18 101945.png | Tipo: .png
+2026-05-18 14:22:48 | INFO     | pdf_router | Convertendo imagem: Captura de tela 2026-05-18 101945.png
+2026-05-18 14:22:48 | INFO     | pdf_router | Imagem convertida: Captura de tela 2026-05-18 101945.png
+2026-05-18 14:22:48 | INFO     | pdf_router | Iniciando merge de 3 PDFs
+2026-05-18 14:22:48 | ERROR    | pdf_router | Erro interno no merge: Erro ao processar um arquivo: Um dos arquivos está protegido com senha e não pode ser unificado.
+Traceback (most recent call last):
+  File "/home/carlos/APP_MWAY_LINUX/services/pdf/merge.py", line 18, in merge_pdfs
     raise Exception("Um dos arquivos está protegido com senha e não pode ser unificado.")
 Exception: Um dos arquivos está protegido com senha e não pode ser unificado.
 
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/home/carlos/mway_pdf_tool/routers/pdf_router.py", line 105, in merge_files
-    await run_in_threadpool(merge_pdfs, pdf_convertido, str(output_file))
-  File "/home/carlos/mway_pdf_tool/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+  File "/home/carlos/APP_MWAY_LINUX/routers/pdf_router.py", line 102, in merge_files
+    await run_in_threadpool(merge_pdfs, pdfs_para_juntar, str(output_file))
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
     return await anyio.to_thread.run_sync(func)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/carlos/mway_pdf_tool/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 63, in run_sync
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 63, in run_sync
     return await get_async_backend().run_sync_in_worker_thread(
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/carlos/mway_pdf_tool/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2518, in run_sync_in_worker_thread
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2518, in run_sync_in_worker_thread
     return await future
            ^^^^^^^^^^^^
-  File "/home/carlos/mway_pdf_tool/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1002, in run
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1002, in run
     result = context.run(func, *args)
              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/carlos/mway_pdf_tool/services/pdf/merge.py", line 31, in merge_pdfs
+  File "/home/carlos/APP_MWAY_LINUX/services/pdf/merge.py", line 31, in merge_pdfs
     raise Exception(f"Erro ao processar um arquivo: {str(e)}")
 Exception: Erro ao processar um arquivo: Um dos arquivos está protegido com senha e não pode ser unificado.
-2026-05-13 10:25:16 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 1
-2026-05-13 10:25:16 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (7).pdf | Tipo: .pdf
-2026-05-13 10:25:16 | DEBUG    | pdf_router | PDF direto: Mway_unificado (7).pdf
-2026-05-13 10:25:16 | INFO     | pdf_router | Iniciando merge de 1 PDFs
-2026-05-13 10:25:16 | INFO     | pdf_router | Merge concluído com sucesso | Arquivo: 5f9b1904b2054cd19e50f59a9481977c.pdf
-2026-05-13 10:25:16 | INFO     | pdf_router | Download solicitado | file_id: 5f9b1904b2054cd19e50f59a9481977c.pdf
-2026-05-13 10:25:16 | INFO     | pdf_router | Download iniciado | Arquivo: 5f9b1904b2054cd19e50f59a9481977c.pdf
-2026-05-13 10:27:06 | INFO     | main | Acessando a página inicial
-2026-05-13 10:27:15 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 4
-2026-05-13 10:27:15 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (8).pdf | Tipo: .pdf
-2026-05-13 10:27:15 | DEBUG    | pdf_router | PDF direto: Mway_unificado (8).pdf
-2026-05-13 10:27:15 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (7).pdf | Tipo: .pdf
-2026-05-13 10:27:15 | DEBUG    | pdf_router | PDF direto: Mway_unificado (7).pdf
-2026-05-13 10:27:15 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
-2026-05-13 10:27:15 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
-2026-05-13 10:27:16 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
-2026-05-13 10:27:16 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
-2026-05-13 10:27:16 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
-2026-05-13 10:27:16 | INFO     | pdf_router | Iniciando merge de 4 PDFs
-2026-05-13 10:27:16 | INFO     | pdf_router | Merge concluído com sucesso | Arquivo: 114848274a214c4aa5dce2482306ed5e.pdf
-2026-05-13 10:27:16 | INFO     | pdf_router | Download solicitado | file_id: 114848274a214c4aa5dce2482306ed5e.pdf
-2026-05-13 10:27:16 | INFO     | pdf_router | Download iniciado | Arquivo: 114848274a214c4aa5dce2482306ed5e.pdf
-2026-05-13 10:27:54 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 7
-2026-05-13 10:27:54 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (8).pdf | Tipo: .pdf
-2026-05-13 10:27:54 | DEBUG    | pdf_router | PDF direto: Mway_unificado (8).pdf
-2026-05-13 10:27:54 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (7).pdf | Tipo: .pdf
-2026-05-13 10:27:54 | DEBUG    | pdf_router | PDF direto: Mway_unificado (7).pdf
-2026-05-13 10:27:54 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
-2026-05-13 10:27:54 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
-2026-05-13 10:27:54 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
-2026-05-13 10:27:54 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
-2026-05-13 10:27:54 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
-2026-05-13 10:27:54 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (9).pdf | Tipo: .pdf
-2026-05-13 10:27:54 | DEBUG    | pdf_router | PDF direto: Mway_unificado (9).pdf
-2026-05-13 10:27:54 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
-2026-05-13 10:27:54 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
-2026-05-13 10:27:54 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
-2026-05-13 10:27:54 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
-2026-05-13 10:27:54 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
-2026-05-13 10:27:54 | INFO     | pdf_router | Iniciando merge de 7 PDFs
-2026-05-13 10:27:55 | INFO     | pdf_router | Merge concluído com sucesso | Arquivo: 3456cf0ef9414401bd34d104684d0534.pdf
-2026-05-13 10:27:55 | INFO     | pdf_router | Download solicitado | file_id: 3456cf0ef9414401bd34d104684d0534.pdf
-2026-05-13 10:27:55 | INFO     | pdf_router | Download iniciado | Arquivo: 3456cf0ef9414401bd34d104684d0534.pdf
-2026-05-13 10:32:03 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 7
-2026-05-13 10:32:03 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (8).pdf | Tipo: .pdf
-2026-05-13 10:32:03 | DEBUG    | pdf_router | PDF direto: Mway_unificado (8).pdf
-2026-05-13 10:32:03 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (7).pdf | Tipo: .pdf
-2026-05-13 10:32:03 | DEBUG    | pdf_router | PDF direto: Mway_unificado (7).pdf
-2026-05-13 10:32:03 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
-2026-05-13 10:32:03 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
-2026-05-13 10:32:03 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
-2026-05-13 10:32:03 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
-2026-05-13 10:32:03 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
-2026-05-13 10:32:03 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (9).pdf | Tipo: .pdf
-2026-05-13 10:32:03 | DEBUG    | pdf_router | PDF direto: Mway_unificado (9).pdf
-2026-05-13 10:32:03 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
-2026-05-13 10:32:03 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
-2026-05-13 10:32:03 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
-2026-05-13 10:32:03 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
-2026-05-13 10:32:03 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
-2026-05-13 10:32:03 | INFO     | pdf_router | Iniciando merge de 7 PDFs
-2026-05-13 10:32:04 | INFO     | pdf_router | Merge concluído com sucesso | Arquivo: 06acf7a4863b44069c798e901a265989.pdf
-2026-05-13 10:32:04 | INFO     | pdf_router | Download solicitado | file_id: 06acf7a4863b44069c798e901a265989.pdf
-2026-05-13 10:32:04 | INFO     | pdf_router | Download iniciado | Arquivo: 06acf7a4863b44069c798e901a265989.pdf
-2026-05-13 10:32:14 | INFO     | pdf_router | Nova requisição recebida | Arquivos: 7
-2026-05-13 10:32:14 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (8).pdf | Tipo: .pdf
-2026-05-13 10:32:14 | DEBUG    | pdf_router | PDF direto: Mway_unificado (8).pdf
-2026-05-13 10:32:14 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (7).pdf | Tipo: .pdf
-2026-05-13 10:32:14 | DEBUG    | pdf_router | PDF direto: Mway_unificado (7).pdf
-2026-05-13 10:32:14 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
-2026-05-13 10:32:14 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
-2026-05-13 10:32:14 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
-2026-05-13 10:32:14 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
-2026-05-13 10:32:14 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
-2026-05-13 10:32:14 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (9).pdf | Tipo: .pdf
-2026-05-13 10:32:14 | DEBUG    | pdf_router | PDF direto: Mway_unificado (9).pdf
-2026-05-13 10:32:14 | DEBUG    | pdf_router | Processando arquivo: imagem (2).png | Tipo: .png
-2026-05-13 10:32:14 | INFO     | pdf_router | Convertendo imagem: imagem (2).png
-2026-05-13 10:32:14 | INFO     | pdf_router | Imagem convertida com sucesso: imagem (2).png
-2026-05-13 10:32:14 | DEBUG    | pdf_router | Processando arquivo: Mway_unificado (6).pdf | Tipo: .pdf
-2026-05-13 10:32:14 | DEBUG    | pdf_router | PDF direto: Mway_unificado (6).pdf
-2026-05-13 10:32:14 | INFO     | pdf_router | Iniciando merge de 7 PDFs
-2026-05-13 10:32:14 | INFO     | pdf_router | Merge concluído com sucesso | Arquivo: 52a0cdf122f640a59b8860933de7f18d.pdf
-2026-05-13 10:32:14 | INFO     | pdf_router | Download solicitado | file_id: 52a0cdf122f640a59b8860933de7f18d.pdf
-2026-05-13 10:32:14 | INFO     | pdf_router | Download iniciado | Arquivo: 52a0cdf122f640a59b8860933de7f18d.pdf
+2026-05-18 14:23:51 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 2
+2026-05-18 14:23:51 | DEBUG    | pdf_router | Processando: Mway_unificado (15).pdf | Tipo: .pdf
+2026-05-18 14:23:51 | DEBUG    | pdf_router | PDF direto: Mway_unificado (15).pdf
+2026-05-18 14:23:51 | DEBUG    | pdf_router | Processando: Mway_unificado (13) - Copia.pdf | Tipo: .pdf
+2026-05-18 14:23:51 | DEBUG    | pdf_router | PDF direto: Mway_unificado (13) - Copia.pdf
+2026-05-18 14:23:51 | INFO     | pdf_router | Iniciando merge de 2 PDFs
+2026-05-18 14:23:51 | INFO     | pdf_router | Merge concluído | Arquivo: 54a8b6f6799047d5be47f9ffdab50481.pdf
+2026-05-18 14:23:51 | INFO     | pdf_router | Download solicitado | file_id: 54a8b6f6799047d5be47f9ffdab50481.pdf
+2026-05-18 14:23:51 | INFO     | pdf_router | Download iniciado | Arquivo: 54a8b6f6799047d5be47f9ffdab50481.pdf
+2026-05-18 14:23:51 | INFO     | pdf_router | Arquivo temporário removido: output/54a8b6f6799047d5be47f9ffdab50481.pdf
+2026-05-18 14:24:33 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Mway_unificado (16).pdf
+2026-05-18 14:24:33 | DEBUG    | pdf_router | PDF salvo temporariamente: output/8212003e82994285a4ac124bb5035006.pdf
+2026-05-18 14:24:33 | INFO     | word_converter | Iniciando conversão PDF → DOCX: output/8212003e82994285a4ac124bb5035006.pdf
+2026-05-18 14:24:38 | ERROR    | word_converter | Erro inesperado na conversão de output/8212003e82994285a4ac124bb5035006.pdf
+Traceback (most recent call last):
+  File "/home/carlos/APP_MWAY_LINUX/services/conversion/word_converter.py", line 63, in convert_pdf_to_doc
+    raise FileNotFoundError(
+FileNotFoundError: Conversão falhou: o arquivo .docx não foi gerado pelo LibreOffice.
+2026-05-18 14:24:38 | ERROR    | pdf_router | Erro na conversão PDF→DOCX: Erro inesperado ao converter PDF: Conversão falhou: o arquivo .docx não foi gerado pelo LibreOffice.
+Traceback (most recent call last):
+  File "/home/carlos/APP_MWAY_LINUX/services/conversion/word_converter.py", line 63, in convert_pdf_to_doc
+    raise FileNotFoundError(
+FileNotFoundError: Conversão falhou: o arquivo .docx não foi gerado pelo LibreOffice.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/carlos/APP_MWAY_LINUX/routers/pdf_router.py", line 154, in convert_to_doc
+    docx_path = await run_in_threadpool(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/services/conversion/word_converter.py", line 81, in convert_pdf_to_doc
+    raise Exception(f"Erro inesperado ao converter PDF: {str(e)}")
+Exception: Erro inesperado ao converter PDF: Conversão falhou: o arquivo .docx não foi gerado pelo LibreOffice.
+2026-05-18 15:10:09 | INFO     | main | Acessando a página inicial
+2026-05-18 15:10:19 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Mway_unificado (16).pdf
+2026-05-18 15:10:19 | DEBUG    | pdf_router | PDF salvo temporariamente: output/9bef74a64f4147d5b8ea6970a881ea00.pdf
+2026-05-18 15:10:19 | INFO     | word_converter | Iniciando conversão PDF → DOCX: output/9bef74a64f4147d5b8ea6970a881ea00.pdf
+2026-05-18 15:10:58 | INFO     | word_converter | Conversão concluída: output/9bef74a64f4147d5b8ea6970a881ea00.docx
+2026-05-18 15:10:58 | INFO     | pdf_router | Arquivo temporário removido: output/9bef74a64f4147d5b8ea6970a881ea00.pdf
+2026-05-18 15:10:58 | INFO     | pdf_router | Conversão concluída | Entregando: Mway_Mway_unificado (16).docx
+2026-05-18 15:10:58 | INFO     | pdf_router | Arquivo temporário removido: output/9bef74a64f4147d5b8ea6970a881ea00.docx
+2026-05-18 15:18:35 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Financial ASU 2014-09_Section A.pdf
+2026-05-18 15:18:35 | DEBUG    | pdf_router | PDF salvo temporariamente: output/b37e869c057743089d39036fe98e8235.pdf
+2026-05-18 15:18:35 | INFO     | word_converter | Iniciando conversão PDF → DOCX: output/b37e869c057743089d39036fe98e8235.pdf
+2026-05-18 15:18:49 | INFO     | word_converter | Conversão concluída: output/b37e869c057743089d39036fe98e8235.docx
+2026-05-18 15:18:49 | INFO     | pdf_router | Arquivo temporário removido: output/b37e869c057743089d39036fe98e8235.pdf
+2026-05-18 15:18:49 | INFO     | pdf_router | Conversão concluída | Entregando: Mway_Financial ASU 2014-09_Section A.docx
+2026-05-18 15:18:49 | INFO     | pdf_router | Arquivo temporário removido: output/b37e869c057743089d39036fe98e8235.docx
+2026-05-19 07:31:50 | INFO     | main | Acessando a página inicial
+2026-05-19 07:34:33 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 3
+2026-05-19 07:34:33 | DEBUG    | pdf_router | Processando: Financial ASU 2014-09_Section A.pdf | Tipo: .pdf
+2026-05-19 07:34:33 | DEBUG    | pdf_router | PDF direto: Financial ASU 2014-09_Section A.pdf
+2026-05-19 07:34:33 | DEBUG    | pdf_router | Processando: Visitas INPE e LNCC.pptx | Tipo: .pptx
+2026-05-19 07:34:33 | INFO     | pdf_router | Convertendo Office: Visitas INPE e LNCC.pptx
+2026-05-19 07:34:33 | INFO     | office_converter | Iniciando conversão LibreOffice: /tmp/tmp7qoxl85z/Visitas INPE e LNCC.pptx
+2026-05-19 07:34:35 | INFO     | office_converter | LibreOffice concluiu: /tmp/tmp7qoxl85z/Visitas INPE e LNCC.pdf
+2026-05-19 07:34:35 | INFO     | pdf_router | Office convertido: Visitas INPE e LNCC.pptx
+2026-05-19 07:34:35 | DEBUG    | pdf_router | Processando: Captura de tela 2026-05-18 101945.png | Tipo: .png
+2026-05-19 07:34:35 | INFO     | pdf_router | Convertendo imagem: Captura de tela 2026-05-18 101945.png
+2026-05-19 07:34:35 | INFO     | pdf_router | Imagem convertida: Captura de tela 2026-05-18 101945.png
+2026-05-19 07:34:35 | INFO     | pdf_router | Iniciando merge de 3 PDFs
+2026-05-19 07:34:35 | ERROR    | pdf_router | Erro interno no merge: Erro ao processar um arquivo: Um dos arquivos está protegido com senha e não pode ser unificado.
+Traceback (most recent call last):
+  File "/home/carlos/APP_MWAY_LINUX/services/pdf/merge.py", line 18, in merge_pdfs
+    raise Exception("Um dos arquivos está protegido com senha e não pode ser unificado.")
+Exception: Um dos arquivos está protegido com senha e não pode ser unificado.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/carlos/APP_MWAY_LINUX/routers/pdf_router.py", line 102, in merge_files
+    await run_in_threadpool(merge_pdfs, pdfs_para_juntar, str(output_file))
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/services/pdf/merge.py", line 31, in merge_pdfs
+    raise Exception(f"Erro ao processar um arquivo: {str(e)}")
+Exception: Erro ao processar um arquivo: Um dos arquivos está protegido com senha e não pode ser unificado.
+2026-05-19 07:38:57 | INFO     | main | Acessando a página inicial
+2026-05-19 07:47:26 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 1
+2026-05-19 07:47:26 | DEBUG    | pdf_router | Processando: planilha_teste_100_pessoas.xlsx | Tipo: .xlsx
+2026-05-19 07:47:26 | INFO     | pdf_router | Convertendo Office: planilha_teste_100_pessoas.xlsx
+2026-05-19 07:47:26 | INFO     | office_converter | Iniciando conversão LibreOffice: /tmp/tmpqzoe8000/planilha_teste_100_pessoas.xlsx
+2026-05-19 07:47:27 | INFO     | office_converter | LibreOffice concluiu: /tmp/tmpqzoe8000/planilha_teste_100_pessoas.pdf
+2026-05-19 07:47:27 | INFO     | pdf_router | Office convertido: planilha_teste_100_pessoas.xlsx
+2026-05-19 07:47:27 | INFO     | pdf_router | Iniciando merge de 1 PDFs
+2026-05-19 07:47:27 | INFO     | pdf_router | Merge concluído | Arquivo: d467d420c4524880a02bef0b0a09abfb.pdf
+2026-05-19 07:47:27 | INFO     | pdf_router | Download solicitado | file_id: d467d420c4524880a02bef0b0a09abfb.pdf
+2026-05-19 07:47:27 | INFO     | pdf_router | Download iniciado | Arquivo: d467d420c4524880a02bef0b0a09abfb.pdf
+2026-05-19 07:47:27 | INFO     | pdf_router | Arquivo temporário removido: output/d467d420c4524880a02bef0b0a09abfb.pdf
+2026-05-19 07:47:34 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Mway_unificado (17).pdf
+2026-05-19 07:47:34 | DEBUG    | pdf_router | PDF salvo temporariamente: output/97ffc558f485407684cfbbadc3a0645b.pdf
+2026-05-19 07:47:34 | INFO     | word_converter | Iniciando conversão PDF → DOCX: output/97ffc558f485407684cfbbadc3a0645b.pdf
+2026-05-19 07:47:38 | INFO     | word_converter | Conversão concluída: output/97ffc558f485407684cfbbadc3a0645b.docx
+2026-05-19 07:47:38 | INFO     | pdf_router | Arquivo temporário removido: output/97ffc558f485407684cfbbadc3a0645b.pdf
+2026-05-19 07:47:38 | INFO     | pdf_router | Conversão concluída | Entregando: Mway_Mway_unificado (17).docx
+2026-05-19 07:47:38 | INFO     | pdf_router | Arquivo temporário removido: output/97ffc558f485407684cfbbadc3a0645b.docx
+2026-05-19 07:49:28 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 1
+2026-05-19 07:49:28 | DEBUG    | pdf_router | Processando: teste.pptx | Tipo: .pptx
+2026-05-19 07:49:28 | INFO     | pdf_router | Convertendo Office: teste.pptx
+2026-05-19 07:49:28 | INFO     | office_converter | Iniciando conversão LibreOffice: /tmp/tmp6tcp_2ci/teste.pptx
+2026-05-19 07:49:30 | INFO     | office_converter | LibreOffice concluiu: /tmp/tmp6tcp_2ci/teste.pdf
+2026-05-19 07:49:30 | INFO     | pdf_router | Office convertido: teste.pptx
+2026-05-19 07:49:30 | INFO     | pdf_router | Iniciando merge de 1 PDFs
+2026-05-19 07:49:30 | INFO     | pdf_router | Merge concluído | Arquivo: 1a4e3215db6f4b91bf5040ae499fe1bc.pdf
+2026-05-19 07:49:30 | INFO     | pdf_router | Download solicitado | file_id: 1a4e3215db6f4b91bf5040ae499fe1bc.pdf
+2026-05-19 07:49:30 | INFO     | pdf_router | Download iniciado | Arquivo: 1a4e3215db6f4b91bf5040ae499fe1bc.pdf
+2026-05-19 07:49:30 | INFO     | pdf_router | Arquivo temporário removido: output/1a4e3215db6f4b91bf5040ae499fe1bc.pdf
+2026-05-19 07:49:40 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Mway_unificado (18).pdf
+2026-05-19 07:49:40 | DEBUG    | pdf_router | PDF salvo temporariamente: output/73b6704159c149ecbb0675e1484fe356.pdf
+2026-05-19 07:49:40 | INFO     | word_converter | Iniciando conversão PDF → DOCX: output/73b6704159c149ecbb0675e1484fe356.pdf
+2026-05-19 07:49:42 | INFO     | word_converter | Conversão concluída: output/73b6704159c149ecbb0675e1484fe356.docx
+2026-05-19 07:49:42 | INFO     | pdf_router | Arquivo temporário removido: output/73b6704159c149ecbb0675e1484fe356.pdf
+2026-05-19 07:49:42 | INFO     | pdf_router | Conversão concluída | Entregando: Mway_Mway_unificado (18).docx
+2026-05-19 07:49:42 | INFO     | pdf_router | Arquivo temporário removido: output/73b6704159c149ecbb0675e1484fe356.docx
+2026-05-19 07:51:32 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 1
+2026-05-19 07:51:32 | DEBUG    | pdf_router | Processando: teste.pptx | Tipo: .pptx
+2026-05-19 07:51:32 | INFO     | pdf_router | Convertendo Office: teste.pptx
+2026-05-19 07:51:32 | INFO     | office_converter | Iniciando conversão LibreOffice: /tmp/tmpfzqxwek0/teste.pptx
+2026-05-19 07:51:34 | INFO     | office_converter | LibreOffice concluiu: /tmp/tmpfzqxwek0/teste.pdf
+2026-05-19 07:51:34 | INFO     | pdf_router | Office convertido: teste.pptx
+2026-05-19 07:51:34 | INFO     | pdf_router | Iniciando merge de 1 PDFs
+2026-05-19 07:51:35 | INFO     | pdf_router | Merge concluído | Arquivo: 0facf9a7211649949143a901d6c7c21a.pdf
+2026-05-19 07:51:35 | INFO     | pdf_router | Download solicitado | file_id: 0facf9a7211649949143a901d6c7c21a.pdf
+2026-05-19 07:51:35 | INFO     | pdf_router | Download iniciado | Arquivo: 0facf9a7211649949143a901d6c7c21a.pdf
+2026-05-19 07:51:35 | INFO     | pdf_router | Arquivo temporário removido: output/0facf9a7211649949143a901d6c7c21a.pdf
+2026-05-19 07:51:43 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Mway_unificado (16).pdf
+2026-05-19 07:51:43 | DEBUG    | pdf_router | PDF salvo temporariamente: output/758cdd6d1ef74eb186b7824668807bf5.pdf
+2026-05-19 07:51:43 | INFO     | word_converter | Iniciando conversão PDF → DOCX: output/758cdd6d1ef74eb186b7824668807bf5.pdf
+2026-05-19 07:52:22 | INFO     | word_converter | Conversão concluída: output/758cdd6d1ef74eb186b7824668807bf5.docx
+2026-05-19 07:52:22 | INFO     | pdf_router | Arquivo temporário removido: output/758cdd6d1ef74eb186b7824668807bf5.pdf
+2026-05-19 07:52:22 | INFO     | pdf_router | Conversão concluída | Entregando: Mway_Mway_unificado (16).docx
+2026-05-19 07:52:22 | INFO     | pdf_router | Arquivo temporário removido: output/758cdd6d1ef74eb186b7824668807bf5.docx
+2026-05-19 08:30:21 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Aldair Anderson da Silva - Ficha de EPI digital.pdf
+2026-05-19 08:30:21 | DEBUG    | pdf_router | PDF salvo temporariamente: output/ffa26a891a014be6a371ed138ba47134.pdf
+2026-05-19 08:30:21 | INFO     | word_converter | Iniciando conversão PDF → DOCX: output/ffa26a891a014be6a371ed138ba47134.pdf
+2026-05-19 08:30:23 | INFO     | word_converter | Conversão concluída: output/ffa26a891a014be6a371ed138ba47134.docx
+2026-05-19 08:30:23 | INFO     | pdf_router | Arquivo temporário removido: output/ffa26a891a014be6a371ed138ba47134.pdf
+2026-05-19 08:30:23 | INFO     | pdf_router | Conversão concluída | Entregando: Mway_Aldair Anderson da Silva - Ficha de EPI digital.docx
+2026-05-19 08:30:23 | INFO     | pdf_router | Arquivo temporário removido: output/ffa26a891a014be6a371ed138ba47134.docx
+2026-05-19 08:32:32 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 1
+2026-05-19 08:32:32 | DEBUG    | pdf_router | Processando: Mway_Aldair Anderson da Silva - Ficha de EPI digital.docx | Tipo: .docx
+2026-05-19 08:32:32 | INFO     | pdf_router | Convertendo Office: Mway_Aldair Anderson da Silva - Ficha de EPI digital.docx
+2026-05-19 08:32:32 | INFO     | office_converter | Iniciando conversão LibreOffice: /tmp/tmp8b4agr2w/Mway_Aldair Anderson da Silva - Ficha de EPI digital.docx
+2026-05-19 08:32:34 | INFO     | office_converter | LibreOffice concluiu: /tmp/tmp8b4agr2w/Mway_Aldair Anderson da Silva - Ficha de EPI digital.pdf
+2026-05-19 08:32:34 | INFO     | pdf_router | Office convertido: Mway_Aldair Anderson da Silva - Ficha de EPI digital.docx
+2026-05-19 08:32:34 | INFO     | pdf_router | Iniciando merge de 1 PDFs
+2026-05-19 08:32:34 | INFO     | pdf_router | Merge concluído | Arquivo: c0cd7f1de2984163b912100278519d80.pdf
+2026-05-19 08:32:34 | INFO     | pdf_router | Download solicitado | file_id: c0cd7f1de2984163b912100278519d80.pdf
+2026-05-19 08:32:34 | INFO     | pdf_router | Download iniciado | Arquivo: c0cd7f1de2984163b912100278519d80.pdf
+2026-05-19 08:32:34 | INFO     | pdf_router | Arquivo temporário removido: output/c0cd7f1de2984163b912100278519d80.pdf
+2026-05-19 08:50:38 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Aldair Anderson da Silva - Ficha de EPI digital.pdf
+2026-05-19 08:50:38 | DEBUG    | pdf_router | PDF salvo temporariamente: output/08ba496cd99f44218f2de1d3b9f244a5.pdf
+2026-05-19 08:50:38 | INFO     | word_converter | Iniciando conversão PDF → DOCX: output/08ba496cd99f44218f2de1d3b9f244a5.pdf
+2026-05-19 08:50:40 | INFO     | word_converter | Conversão concluída: output/08ba496cd99f44218f2de1d3b9f244a5.docx
+2026-05-19 08:50:40 | INFO     | pdf_router | Arquivo temporário removido: output/08ba496cd99f44218f2de1d3b9f244a5.pdf
+2026-05-19 08:50:40 | INFO     | pdf_router | Conversão concluída | Entregando: Mway_Aldair Anderson da Silva - Ficha de EPI digital.docx
+2026-05-19 08:50:40 | INFO     | pdf_router | Arquivo temporário removido: output/08ba496cd99f44218f2de1d3b9f244a5.docx
+2026-05-19 09:23:54 | INFO     | main | Acessando a página inicial
+2026-05-19 09:26:08 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 1
+2026-05-19 09:26:08 | DEBUG    | pdf_router | Processando: Aldair Anderson da Silva - Ficha de EPI digital.docx | Tipo: .docx
+2026-05-19 09:26:08 | INFO     | pdf_router | Convertendo Office: Aldair Anderson da Silva - Ficha de EPI digital.docx
+2026-05-19 09:26:08 | INFO     | office_converter | Iniciando conversão LibreOffice: /tmp/tmpk_t1jikx/bc8fb128651542dfa81fee74eb2c484f.docx
+2026-05-19 09:26:10 | INFO     | office_converter | LibreOffice concluiu: /tmp/tmpk_t1jikx/bc8fb128651542dfa81fee74eb2c484f.pdf
+2026-05-19 09:26:10 | INFO     | pdf_router | Iniciando merge de 1 PDFs
+2026-05-19 09:26:10 | INFO     | pdf_router | Merge concluído | Arquivo: da7d46852117421bbc80e053f1390a16.pdf
+2026-05-19 09:26:10 | INFO     | pdf_router | Download solicitado | file_id: da7d46852117421bbc80e053f1390a16.pdf
+2026-05-19 09:26:10 | INFO     | pdf_router | Download iniciado | Arquivo: da7d46852117421bbc80e053f1390a16.pdf
+2026-05-19 09:26:10 | INFO     | pdf_router | Arquivo temporário removido: output/da7d46852117421bbc80e053f1390a16.pdf
+2026-05-19 09:26:20 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Mway_unificado (5).pdf
+2026-05-19 09:26:20 | DEBUG    | pdf_router | PDF salvo temporariamente: output/62f201f7ba9741e1b8f5cc988907194e.pdf
+2026-05-19 09:26:20 | INFO     | word_converter | Iniciando conversão PDF → DOCX: output/62f201f7ba9741e1b8f5cc988907194e.pdf
+2026-05-19 09:26:20 | INFO     | word_converter | PDF validado: 10 página(s)
+2026-05-19 09:26:22 | INFO     | word_converter | Conversão concluída: output/62f201f7ba9741e1b8f5cc988907194e.docx
+2026-05-19 09:26:22 | INFO     | pdf_router | Arquivo temporário removido: output/62f201f7ba9741e1b8f5cc988907194e.pdf
+2026-05-19 09:26:22 | INFO     | pdf_router | Conversão concluída | Entregando: Mway_Mway_unificado 5.docx
+2026-05-19 09:26:22 | INFO     | pdf_router | Arquivo temporário removido: output/62f201f7ba9741e1b8f5cc988907194e.docx
+2026-05-19 11:28:06 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 1
+2026-05-19 11:28:06 | DEBUG    | pdf_router | Processando: teste.pptx | Tipo: .pptx
+2026-05-19 11:28:06 | INFO     | pdf_router | Convertendo Office: teste.pptx
+2026-05-19 11:28:06 | INFO     | office_converter | Iniciando conversão LibreOffice: /tmp/tmpzxzmkatq/a0de396dcee743d994a9f11b3977224e.pptx
+2026-05-19 11:28:09 | INFO     | office_converter | LibreOffice concluiu: /tmp/tmpzxzmkatq/a0de396dcee743d994a9f11b3977224e.pdf
+2026-05-19 11:28:09 | INFO     | pdf_router | Iniciando merge de 1 PDFs
+2026-05-19 11:28:09 | INFO     | pdf_router | Merge concluído | Arquivo: ea5f73f1a79b46479f5d75b0898caf09.pdf
+2026-05-19 11:28:09 | INFO     | pdf_router | Download solicitado | file_id: ea5f73f1a79b46479f5d75b0898caf09.pdf
+2026-05-19 11:28:09 | INFO     | pdf_router | Download iniciado | Arquivo: ea5f73f1a79b46479f5d75b0898caf09.pdf
+2026-05-19 11:28:09 | INFO     | pdf_router | Arquivo temporário removido: output/ea5f73f1a79b46479f5d75b0898caf09.pdf
+2026-05-19 11:29:15 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: teste do pptx.pdf
+2026-05-19 11:29:15 | DEBUG    | pdf_router | PDF salvo temporariamente: output/8464f93d4aba42729809d5a853729bbb.pdf
+2026-05-19 11:29:15 | INFO     | word_converter | Iniciando conversão PDF → DOCX: output/8464f93d4aba42729809d5a853729bbb.pdf
+2026-05-19 11:29:15 | INFO     | word_converter | PDF validado: 6 página(s)
+2026-05-19 11:29:18 | INFO     | word_converter | Conversão concluída: output/8464f93d4aba42729809d5a853729bbb.docx
+2026-05-19 11:29:18 | INFO     | pdf_router | Arquivo temporário removido: output/8464f93d4aba42729809d5a853729bbb.pdf
+2026-05-19 11:29:18 | INFO     | pdf_router | Conversão concluída | Entregando: Mway_teste do pptx.docx
+2026-05-19 11:29:18 | INFO     | pdf_router | Arquivo temporário removido: output/8464f93d4aba42729809d5a853729bbb.docx
+2026-05-19 15:41:48 | INFO     | main | Acessando a página inicial
+2026-05-19 15:41:59 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Superman_James_Gunn.webp
+2026-05-19 15:41:59 | WARNING  | pdf_router | Arquivo rejeitado: extensão inválida (.webp)
+2026-05-19 15:42:15 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: ebook_ada8496c-d114-42c7-a45e-f693687feb2d.pdf
+2026-05-19 15:42:15 | DEBUG    | pdf_router | PDF salvo temporariamente: output/5d951c73d9f5483fb6d9b55b742673cd.pdf
+2026-05-19 15:42:15 | INFO     | word_converter | Iniciando conversão PDF → DOCX: output/5d951c73d9f5483fb6d9b55b742673cd.pdf
+2026-05-19 15:42:15 | WARNING  | pdf_router | PDF inválido: O PDF está protegido por senha. Remova a proteção antes de converter.
+2026-05-19 15:42:15 | INFO     | pdf_router | Arquivo temporário removido: output/5d951c73d9f5483fb6d9b55b742673cd.pdf
+2026-05-19 15:42:27 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Manual Profissional - Gerador De Pdf Multiway Infra.pdf
+2026-05-19 15:42:27 | DEBUG    | pdf_router | PDF salvo temporariamente: output/7d32d95d39b8413481a7df87570917ce.pdf
+2026-05-19 15:42:27 | INFO     | word_converter | Iniciando conversão PDF → DOCX: output/7d32d95d39b8413481a7df87570917ce.pdf
+2026-05-19 15:42:27 | INFO     | word_converter | PDF validado: 3 página(s)
+2026-05-19 15:42:27 | INFO     | word_converter | Conversão concluída: output/7d32d95d39b8413481a7df87570917ce.docx
+2026-05-19 15:42:27 | INFO     | pdf_router | Arquivo temporário removido: output/7d32d95d39b8413481a7df87570917ce.pdf
+2026-05-19 15:42:27 | INFO     | pdf_router | Conversão concluída | Entregando: Mway_Manual Profissional - Gerador De Pdf Multiway Infra.docx
+2026-05-19 15:42:27 | INFO     | pdf_router | Arquivo temporário removido: output/7d32d95d39b8413481a7df87570917ce.docx
+2026-05-21 08:28:54 | INFO     | main | Acessando a página inicial
+2026-05-21 08:29:13 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Aldair Anderson da Silva - Ficha de EPI digital.pdf
+2026-05-21 08:29:13 | DEBUG    | pdf_router | PDF salvo temporariamente: output/6f043409e5b04d199e4027088eb51723.pdf
+2026-05-21 08:29:13 | INFO     | word_converter | Iniciando conversão PDF → DOCX (Abordagem 1 — pdf2docx): output/6f043409e5b04d199e4027088eb51723.pdf
+2026-05-21 08:29:13 | INFO     | word_converter | PDF validado: 6 página(s)
+2026-05-21 08:29:16 | INFO     | word_converter | Conversão (Abordagem 1) concluída: output/6f043409e5b04d199e4027088eb51723.docx
+2026-05-21 08:29:16 | INFO     | pdf_router | Arquivo temporário removido: output/6f043409e5b04d199e4027088eb51723.pdf
+2026-05-21 08:29:16 | INFO     | pdf_router | Conversão concluída | Entregando: Mway_Aldair Anderson da Silva - Ficha de EPI digital.docx
+2026-05-21 08:29:16 | INFO     | pdf_router | Arquivo temporário removido: output/6f043409e5b04d199e4027088eb51723.docx
+2026-05-21 08:30:22 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: teste do pptx.pdf
+2026-05-21 08:30:22 | DEBUG    | pdf_router | PDF salvo temporariamente: output/ea58226c57be48f7b090edc1a6bde1c1.pdf
+2026-05-21 08:30:22 | INFO     | word_converter | Iniciando conversão PDF → DOCX (Abordagem 1 — pdf2docx): output/ea58226c57be48f7b090edc1a6bde1c1.pdf
+2026-05-21 08:30:22 | INFO     | word_converter | PDF validado: 6 página(s)
+2026-05-21 08:30:25 | INFO     | word_converter | Conversão (Abordagem 1) concluída: output/ea58226c57be48f7b090edc1a6bde1c1.docx
+2026-05-21 08:30:25 | INFO     | pdf_router | Arquivo temporário removido: output/ea58226c57be48f7b090edc1a6bde1c1.pdf
+2026-05-21 08:30:25 | INFO     | pdf_router | Conversão concluída | Entregando: Mway_teste do pptx.docx
+2026-05-21 08:30:25 | INFO     | pdf_router | Arquivo temporário removido: output/ea58226c57be48f7b090edc1a6bde1c1.docx
+2026-05-21 09:56:59 | INFO     | main | Acessando a página inicial
+2026-05-21 09:57:23 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Kingspan IT Manual - v5.01 (1).pdf
+2026-05-21 09:57:23 | DEBUG    | pdf_router | PDF salvo temporariamente: output/b8e920ce445946feb40749fcf0dac338.pdf
+2026-05-21 09:57:23 | INFO     | word_converter | Iniciando conversão PDF → DOCX (Abordagem 1 — pdf2docx): output/b8e920ce445946feb40749fcf0dac338.pdf
+2026-05-21 09:57:23 | WARNING  | pdf_router | PDF inválido: PDF excede o limite de 50 páginas (encontradas: 111).
+2026-05-21 09:57:23 | INFO     | pdf_router | Arquivo temporário removido: output/b8e920ce445946feb40749fcf0dac338.pdf
+2026-05-21 09:58:53 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: ebook_ada8496c-d114-42c7-a45e-f693687feb2d_compressed.pdf
+2026-05-21 09:58:53 | DEBUG    | pdf_router | PDF salvo temporariamente: output/6a601223bc9c4e0a91d8bccf3f566fb2.pdf
+2026-05-21 09:58:53 | INFO     | word_converter | Iniciando conversão PDF → DOCX (Abordagem 1 — pdf2docx): output/6a601223bc9c4e0a91d8bccf3f566fb2.pdf
+2026-05-21 09:58:53 | INFO     | word_converter | PDF validado: 16 página(s)
+2026-05-21 09:59:11 | INFO     | word_converter | Conversão (Abordagem 1) concluída: output/6a601223bc9c4e0a91d8bccf3f566fb2.docx
+2026-05-21 09:59:11 | INFO     | pdf_router | Arquivo temporário removido: output/6a601223bc9c4e0a91d8bccf3f566fb2.pdf
+2026-05-21 09:59:11 | INFO     | pdf_router | Conversão concluída | Entregando: Mway_ebook_ada8496c-d114-42c7-a45e-f693687feb2d_compressed.docx
+2026-05-21 09:59:11 | INFO     | pdf_router | Arquivo temporário removido: output/6a601223bc9c4e0a91d8bccf3f566fb2.docx
+2026-05-21 10:03:37 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 8
+2026-05-21 10:03:37 | DEBUG    | pdf_router | Processando: ebook_ada8496c-d114-42c7-a45e-f693687feb2d_compressed.pdf | Tipo: .pdf
+2026-05-21 10:03:37 | DEBUG    | pdf_router | Processando: Aldair Anderson da Silva - Ficha de EPI digital (1).docx | Tipo: .docx
+2026-05-21 10:03:37 | INFO     | pdf_router | Convertendo Office: Aldair Anderson da Silva - Ficha de EPI digital (1).docx
+2026-05-21 10:03:37 | INFO     | office_converter | Iniciando conversão LibreOffice: /tmp/tmpppnkqzco/47167b81036c41ffa20940af78e8d996.docx
+2026-05-21 10:03:39 | INFO     | office_converter | LibreOffice concluiu: /tmp/tmpppnkqzco/47167b81036c41ffa20940af78e8d996.pdf
+2026-05-21 10:03:39 | DEBUG    | pdf_router | Processando: Mway_Aldair Anderson da Silva - Ficha de EPI digital (2).docx | Tipo: .docx
+2026-05-21 10:03:39 | INFO     | pdf_router | Convertendo Office: Mway_Aldair Anderson da Silva - Ficha de EPI digital (2).docx
+2026-05-21 10:03:39 | INFO     | office_converter | Iniciando conversão LibreOffice: /tmp/tmpppnkqzco/e418135f3d454b6396521936e90c3c05.docx
+2026-05-21 10:03:40 | INFO     | office_converter | LibreOffice concluiu: /tmp/tmpppnkqzco/e418135f3d454b6396521936e90c3c05.pdf
+2026-05-21 10:03:40 | DEBUG    | pdf_router | Processando: guia zabbix.pdf | Tipo: .pdf
+2026-05-21 10:03:40 | DEBUG    | pdf_router | Processando: Guia_Zabbix_Docker.docx | Tipo: .docx
+2026-05-21 10:03:40 | INFO     | pdf_router | Convertendo Office: Guia_Zabbix_Docker.docx
+2026-05-21 10:03:40 | INFO     | office_converter | Iniciando conversão LibreOffice: /tmp/tmpppnkqzco/b871831eee6b4812bc0220207fb3e86e.docx
+2026-05-21 10:03:41 | INFO     | office_converter | LibreOffice concluiu: /tmp/tmpppnkqzco/b871831eee6b4812bc0220207fb3e86e.pdf
+2026-05-21 10:03:41 | DEBUG    | pdf_router | Processando: Mway_Manual Profissional - Gerador De Pdf Multiway Infra.docx | Tipo: .docx
+2026-05-21 10:03:41 | INFO     | pdf_router | Convertendo Office: Mway_Manual Profissional - Gerador De Pdf Multiway Infra.docx
+2026-05-21 10:03:41 | INFO     | office_converter | Iniciando conversão LibreOffice: /tmp/tmpppnkqzco/d4768d6eb22b43c9b67aff1624b218c3.docx
+2026-05-21 10:03:42 | INFO     | office_converter | LibreOffice concluiu: /tmp/tmpppnkqzco/d4768d6eb22b43c9b67aff1624b218c3.pdf
+2026-05-21 10:03:42 | DEBUG    | pdf_router | Processando: Mídia (2).jpg | Tipo: .jpg
+2026-05-21 10:03:42 | INFO     | pdf_router | Convertendo imagem: Mídia (2).jpg
+2026-05-21 10:03:42 | DEBUG    | pdf_router | Processando: teste do pptx.pdf | Tipo: .pdf
+2026-05-21 10:03:42 | INFO     | pdf_router | Iniciando merge de 8 PDFs
+2026-05-21 10:03:42 | INFO     | pdf_router | Merge concluído | Arquivo: f1fdd0a79887442c81b987fe3f3ed37b.pdf
+2026-05-21 10:03:42 | INFO     | pdf_router | Download solicitado | file_id: f1fdd0a79887442c81b987fe3f3ed37b.pdf
+2026-05-21 10:03:42 | INFO     | pdf_router | Download iniciado | Arquivo: f1fdd0a79887442c81b987fe3f3ed37b.pdf
+2026-05-21 10:03:42 | INFO     | pdf_router | Arquivo temporário removido: output/f1fdd0a79887442c81b987fe3f3ed37b.pdf
+2026-05-21 10:04:27 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Mway_unificado (6)_compressed.pdf
+2026-05-21 10:04:27 | DEBUG    | pdf_router | PDF salvo temporariamente: output/5d80ef53faec477f815974c008215e03.pdf
+2026-05-21 10:04:27 | INFO     | word_converter | Iniciando conversão PDF → DOCX (Abordagem 1 — pdf2docx): output/5d80ef53faec477f815974c008215e03.pdf
+2026-05-21 10:04:27 | WARNING  | pdf_router | PDF inválido: PDF excede o limite de 50 páginas (encontradas: 55).
+2026-05-21 10:04:27 | INFO     | pdf_router | Arquivo temporário removido: output/5d80ef53faec477f815974c008215e03.pdf
+2026-05-21 10:31:14 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Aldair Anderson da Silva - Ficha de EPI digital (1).pdf
+2026-05-21 10:31:14 | DEBUG    | pdf_router | PDF salvo temporariamente: output/9050633fa0e14527933f7e23421ebdd0.pdf
+2026-05-21 10:31:14 | INFO     | word_converter | Iniciando conversão PDF → DOCX (Abordagem 1 — pdf2docx): output/9050633fa0e14527933f7e23421ebdd0.pdf
+2026-05-21 10:31:14 | INFO     | word_converter | PDF validado: 6 página(s)
+2026-05-21 10:31:19 | INFO     | word_converter | Conversão (Abordagem 1) concluída: output/9050633fa0e14527933f7e23421ebdd0.docx
+2026-05-21 10:31:19 | INFO     | pdf_router | Arquivo temporário removido: output/9050633fa0e14527933f7e23421ebdd0.pdf
+2026-05-21 10:31:19 | INFO     | pdf_router | Conversão concluída | Entregando: Mway_Aldair Anderson da Silva - Ficha de EPI digital 1.docx
+2026-05-21 10:31:19 | INFO     | pdf_router | Arquivo temporário removido: output/9050633fa0e14527933f7e23421ebdd0.docx
+2026-05-21 12:42:21 | INFO     | main | Acessando a página inicial
+2026-05-21 12:43:35 | INFO     | pdf_router | Nova requisição de compressão | Arquivo: Mway_unificado (6).pdf
+2026-05-21 12:43:35 | INFO     | compressor | Iniciando compressão: output/d43016fbe99d496da9c0bf6f44a1ac95_in.pdf
+2026-05-21 12:43:35 | INFO     | compressor | PDF aceito: 55 página(s), 3968453 bytes
+2026-05-21 12:43:35 | DEBUG    | compressor | Metadados limpos
+2026-05-21 12:43:35 | INFO     | compressor | Compressão concluída: 3968453 → 3903072 bytes (1.6%)
+2026-05-21 12:43:35 | INFO     | compressor | Redução insuficiente (1.6% < 5.0%) — devolvendo arquivo original
+2026-05-21 12:43:35 | INFO     | pdf_router | Arquivo temporário removido: output/d43016fbe99d496da9c0bf6f44a1ac95_in.pdf
+2026-05-21 12:43:35 | INFO     | pdf_router | Compressão entregue | 3968453 → 3968453 bytes (0.0%) | comprimido=False
+2026-05-21 12:43:35 | INFO     | pdf_router | Arquivo temporário removido: output/d43016fbe99d496da9c0bf6f44a1ac95.pdf
+2026-05-21 12:43:56 | INFO     | pdf_router | Nova requisição de compressão | Arquivo: ebook_ada8496c-d114-42c7-a45e-f693687feb2d_compressed.pdf
+2026-05-21 12:43:56 | INFO     | compressor | Iniciando compressão: output/4b0e7a3862464c90a2bf89a94f385702_in.pdf
+2026-05-21 12:43:56 | INFO     | compressor | PDF aceito: 16 página(s), 1208793 bytes
+2026-05-21 12:43:56 | DEBUG    | compressor | Metadados limpos
+2026-05-21 12:43:56 | INFO     | compressor | Compressão concluída: 1208793 → 1192807 bytes (1.3%)
+2026-05-21 12:43:56 | INFO     | compressor | Redução insuficiente (1.3% < 5.0%) — devolvendo arquivo original
+2026-05-21 12:43:56 | INFO     | pdf_router | Arquivo temporário removido: output/4b0e7a3862464c90a2bf89a94f385702_in.pdf
+2026-05-21 12:43:56 | INFO     | pdf_router | Compressão entregue | 1208793 → 1208793 bytes (0.0%) | comprimido=False
+2026-05-21 12:43:56 | INFO     | pdf_router | Arquivo temporário removido: output/4b0e7a3862464c90a2bf89a94f385702.pdf
+2026-05-21 12:44:11 | INFO     | pdf_router | Nova requisição de compressão | Arquivo: ebook_ada8496c-d114-42c7-a45e-f693687feb2d.pdf
+2026-05-21 12:44:11 | INFO     | compressor | Iniciando compressão: output/4558d6275d96478cb443a0ca76594c33_in.pdf
+2026-05-21 12:44:11 | INFO     | compressor | PDF aceito: 16 página(s), 1577319 bytes
+2026-05-21 12:44:11 | DEBUG    | compressor | Metadados limpos
+2026-05-21 12:44:11 | INFO     | compressor | Compressão concluída: 1577319 → 1197090 bytes (24.1%)
+2026-05-21 12:44:11 | INFO     | pdf_router | Arquivo temporário removido: output/4558d6275d96478cb443a0ca76594c33_in.pdf
+2026-05-21 12:44:11 | INFO     | pdf_router | Compressão entregue | 1577319 → 1197090 bytes (24.11%) | comprimido=True
+2026-05-21 12:44:11 | INFO     | pdf_router | Arquivo temporário removido: output/4558d6275d96478cb443a0ca76594c33.pdf
+2026-05-21 12:45:52 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Mway_ebook_ada8496c-d114-42c7-a45e-f693687feb2d_comprimido.pdf
+2026-05-21 12:45:52 | INFO     | word_converter | Iniciando conversão PDF → DOCX (Abordagem 1 — pdf2docx): output/0ce34eef831440c284ebd70ea4e78e82.pdf
+2026-05-21 12:45:52 | INFO     | word_converter | PDF validado: 16 página(s)
+2026-05-21 12:46:10 | INFO     | word_converter | Conversão (Abordagem 1) concluída: output/0ce34eef831440c284ebd70ea4e78e82.docx
+2026-05-21 12:46:10 | INFO     | pdf_router | Arquivo temporário removido: output/0ce34eef831440c284ebd70ea4e78e82.pdf
+2026-05-21 12:46:10 | INFO     | pdf_router | Conversão concluída | Entregando: Mway_Mway_ebook_ada8496c-d114-42c7-a45e-f693687feb2d_comprimido.docx
+2026-05-21 12:46:10 | INFO     | pdf_router | Arquivo temporário removido: output/0ce34eef831440c284ebd70ea4e78e82.docx
+2026-05-21 12:47:20 | INFO     | pdf_router | Nova requisição de compressão | Arquivo: ebook_ada8496c-d114-42c7-a45e-f693687feb2d_compressed.pdf
+2026-05-21 12:47:20 | INFO     | compressor | Iniciando compressão: output/3aa4d9e8a6d445dfae3779d63b74838f_in.pdf
+2026-05-21 12:47:20 | INFO     | compressor | PDF aceito: 16 página(s), 1208793 bytes
+2026-05-21 12:47:20 | DEBUG    | compressor | Metadados limpos
+2026-05-21 12:47:20 | INFO     | compressor | Compressão concluída: 1208793 → 1192807 bytes (1.3%)
+2026-05-21 12:47:20 | INFO     | compressor | Redução insuficiente (1.3% < 5.0%) — devolvendo arquivo original
+2026-05-21 12:47:20 | INFO     | pdf_router | Arquivo temporário removido: output/3aa4d9e8a6d445dfae3779d63b74838f_in.pdf
+2026-05-21 12:47:20 | INFO     | pdf_router | Compressão entregue | 1208793 → 1208793 bytes (0.0%) | comprimido=False
+2026-05-21 12:47:20 | INFO     | pdf_router | Arquivo temporário removido: output/3aa4d9e8a6d445dfae3779d63b74838f.pdf
+2026-05-21 12:47:44 | INFO     | pdf_router | Nova requisição de compressão | Arquivo: teste gustav.pdf
+2026-05-21 12:47:44 | INFO     | compressor | Iniciando compressão: output/a9df00d866584bbf96b3449a1b7f7b05_in.pdf
+2026-05-21 12:47:44 | INFO     | compressor | PDF aceito: 5 página(s), 4597711 bytes
+2026-05-21 12:47:44 | DEBUG    | compressor | Metadados limpos
+2026-05-21 12:47:45 | INFO     | compressor | Compressão concluída: 4597711 → 4562708 bytes (0.8%)
+2026-05-21 12:47:45 | INFO     | compressor | Redução insuficiente (0.8% < 5.0%) — devolvendo arquivo original
+2026-05-21 12:47:45 | INFO     | pdf_router | Arquivo temporário removido: output/a9df00d866584bbf96b3449a1b7f7b05_in.pdf
+2026-05-21 12:47:45 | INFO     | pdf_router | Compressão entregue | 4597711 → 4597711 bytes (0.0%) | comprimido=False
+2026-05-21 12:47:45 | INFO     | pdf_router | Arquivo temporário removido: output/a9df00d866584bbf96b3449a1b7f7b05.pdf
+2026-05-21 12:48:15 | INFO     | pdf_router | Nova requisição de compressão | Arquivo: Kingspan IT Manual - v5.01 (1).pdf
+2026-05-21 12:48:15 | INFO     | compressor | Iniciando compressão: output/5a53c08341b041d8bef93b1739480f6f_in.pdf
+2026-05-21 12:48:15 | INFO     | compressor | PDF aceito: 111 página(s), 1692501 bytes
+2026-05-21 12:48:15 | DEBUG    | compressor | Metadados limpos
+2026-05-21 12:48:17 | INFO     | compressor | Compressão concluída: 1692501 → 2204775 bytes (-30.3%)
+2026-05-21 12:48:17 | INFO     | compressor | Redução insuficiente (-30.3% < 5.0%) — devolvendo arquivo original
+2026-05-21 12:48:17 | INFO     | pdf_router | Arquivo temporário removido: output/5a53c08341b041d8bef93b1739480f6f_in.pdf
+2026-05-21 12:48:17 | INFO     | pdf_router | Compressão entregue | 1692501 → 1692501 bytes (0.0%) | comprimido=False
+2026-05-21 12:48:17 | INFO     | pdf_router | Arquivo temporário removido: output/5a53c08341b041d8bef93b1739480f6f.pdf
+2026-05-21 12:48:57 | INFO     | pdf_router | Nova requisição de compressão | Arquivo: ebook_ada8496c-d114-42c7-a45e-f693687feb2d_compressed.pdf
+2026-05-21 12:48:57 | INFO     | compressor | Iniciando compressão: output/8ec312f4181d49e082e07ed389a021a8_in.pdf
+2026-05-21 12:48:57 | INFO     | compressor | PDF aceito: 16 página(s), 1208793 bytes
+2026-05-21 12:48:57 | DEBUG    | compressor | Metadados limpos
+2026-05-21 12:48:57 | INFO     | compressor | Compressão concluída: 1208793 → 1192807 bytes (1.3%)
+2026-05-21 12:48:57 | INFO     | compressor | Redução insuficiente (1.3% < 5.0%) — devolvendo arquivo original
+2026-05-21 12:48:57 | INFO     | pdf_router | Arquivo temporário removido: output/8ec312f4181d49e082e07ed389a021a8_in.pdf
+2026-05-21 12:48:57 | INFO     | pdf_router | Compressão entregue | 1208793 → 1208793 bytes (0.0%) | comprimido=False
+2026-05-21 12:48:57 | INFO     | pdf_router | Arquivo temporário removido: output/8ec312f4181d49e082e07ed389a021a8.pdf
+2026-05-21 12:51:18 | INFO     | main | Acessando a página inicial
+2026-05-21 12:51:30 | INFO     | pdf_router | Nova requisição de compressão | Arquivo: Aldair Anderson da Silva - Ficha de EPI digital.pdf
+2026-05-21 12:51:30 | INFO     | compressor | Iniciando compressão: output/4bb4b081174147abbcddc5bdb6d96343_in.pdf
+2026-05-21 12:51:30 | INFO     | compressor | PDF aceito: 6 página(s), 1156658 bytes
+2026-05-21 12:51:30 | DEBUG    | compressor | Metadados limpos
+2026-05-21 12:51:30 | INFO     | compressor | Compressão concluída: 1156658 → 836075 bytes (27.7%)
+2026-05-21 12:51:30 | INFO     | pdf_router | Arquivo temporário removido: output/4bb4b081174147abbcddc5bdb6d96343_in.pdf
+2026-05-21 12:51:30 | INFO     | pdf_router | Compressão entregue | 1156658 → 836075 bytes (27.72%) | comprimido=True
+2026-05-21 12:51:30 | INFO     | pdf_router | Arquivo temporário removido: output/4bb4b081174147abbcddc5bdb6d96343.pdf
+2026-05-21 14:03:57 | INFO     | main | Acessando a página inicial
+2026-05-21 14:52:41 | INFO     | main | Acessando a página inicial
+2026-05-21 14:53:14 | INFO     | pdf_router | Nova requisição de compressão | Arquivo: teste.pdf.bat
+2026-05-21 14:53:14 | WARNING  | pdf_router | Compressão rejeitada: extensão inválida (.bat)
+2026-05-21 15:09:09 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 1
+2026-05-21 15:09:09 | INFO     | pdf_router | Iniciando merge de 1 PDFs
+2026-05-21 15:09:09 | ERROR    | pdf_router | Erro interno no merge: Um dos arquivos selecionados está corrompido ou não é um PDF válido.
+Traceback (most recent call last):
+  File "/home/carlos/APP_MWAY_LINUX/services/pdf/merge.py", line 14, in merge_pdfs
+    leitor = PdfReader(caminho)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 149, in __init__
+    self._initialize_stream(stream)
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 171, in _initialize_stream
+    self.read(stream)
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 644, in read
+    self._find_eof_marker(stream)
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 750, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_utils.py", line 330, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/carlos/APP_MWAY_LINUX/routers/pdf_router.py", line 137, in merge_files
+    await run_in_threadpool(merge_pdfs, pdfs_para_juntar, str(output_file))
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/services/pdf/merge.py", line 27, in merge_pdfs
+    raise Exception("Um dos arquivos selecionados está corrompido ou não é um PDF válido.")
+Exception: Um dos arquivos selecionados está corrompido ou não é um PDF válido.
+2026-05-21 15:09:20 | INFO     | pdf_router | Nova requisição de compressão | Arquivo: teste_seguranca.pdf
+2026-05-21 15:09:20 | WARNING  | pdf_router | Compressão rejeitada: não é PDF válido (magic: b'@off ')
+2026-05-21 15:09:20 | INFO     | pdf_router | Arquivo temporário removido: output/1226546033aa45c38fcdc6a05625c64c_in.pdf
+2026-05-21 15:09:27 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: teste_seguranca.pdf
+2026-05-21 15:09:27 | WARNING  | pdf_router | Arquivo rejeitado: não é PDF válido
+2026-05-21 15:09:27 | INFO     | pdf_router | Arquivo temporário removido: output/a38c405f1e174cb493c2e7902e74a5e0.pdf
+2026-05-21 15:14:51 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 1
+2026-05-21 15:14:51 | INFO     | pdf_router | Iniciando merge de 1 PDFs
+2026-05-21 15:14:51 | ERROR    | pdf_router | Erro interno no merge: Um dos arquivos selecionados está corrompido ou não é um PDF válido.
+Traceback (most recent call last):
+  File "/home/carlos/APP_MWAY_LINUX/services/pdf/merge.py", line 14, in merge_pdfs
+    leitor = PdfReader(caminho)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 149, in __init__
+    self._initialize_stream(stream)
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 171, in _initialize_stream
+    self.read(stream)
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 644, in read
+    self._find_eof_marker(stream)
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 750, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_utils.py", line 330, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/carlos/APP_MWAY_LINUX/routers/pdf_router.py", line 137, in merge_files
+    await run_in_threadpool(merge_pdfs, pdfs_para_juntar, str(output_file))
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/services/pdf/merge.py", line 27, in merge_pdfs
+    raise Exception("Um dos arquivos selecionados está corrompido ou não é um PDF válido.")
+Exception: Um dos arquivos selecionados está corrompido ou não é um PDF válido.
+2026-05-21 15:15:00 | INFO     | pdf_router | Nova requisição de compressão | Arquivo: teste_seguranca.pdf
+2026-05-21 15:15:00 | WARNING  | pdf_router | Compressão rejeitada: não é PDF válido (magic: b'@off ')
+2026-05-21 15:15:00 | INFO     | pdf_router | Arquivo temporário removido: output/a45900aa256c487cb61274293ac19fee_in.pdf
+2026-05-21 15:21:03 | INFO     | pdf_router | Nova requisição de compressão | Arquivo: guia zabbix.pdf
+2026-05-21 15:21:03 | INFO     | compressor | Iniciando compressão: output/bf3b890fcf92499cbcb5f4683ab02678_in.pdf
+2026-05-21 15:21:03 | INFO     | compressor | PDF aceito: 6 página(s), 69806 bytes
+2026-05-21 15:21:03 | DEBUG    | compressor | Metadados limpos
+2026-05-21 15:21:03 | INFO     | compressor | Compressão concluída: 69806 → 70099 bytes (-0.4%)
+2026-05-21 15:21:03 | INFO     | compressor | Redução insuficiente (-0.4% < 5.0%) — devolvendo arquivo original
+2026-05-21 15:21:03 | INFO     | pdf_router | Arquivo temporário removido: output/bf3b890fcf92499cbcb5f4683ab02678_in.pdf
+2026-05-21 15:21:03 | INFO     | pdf_router | Compressão entregue | 69806 → 69806 bytes (0.0%) | comprimido=False
+2026-05-21 15:21:03 | INFO     | pdf_router | Arquivo temporário removido: output/bf3b890fcf92499cbcb5f4683ab02678.pdf
+2026-05-21 15:21:27 | INFO     | pdf_router | Nova requisição de compressão | Arquivo: 0ADQ - CAGExx0509 - Adequação Equinix SP6-1_compressed.pdf
+2026-05-21 15:21:27 | INFO     | compressor | Iniciando compressão: output/7cc93c20a7ac470fa78cf438e1e9c5fc_in.pdf
+2026-05-21 15:21:27 | INFO     | compressor | PDF aceito: 5 página(s), 4605353 bytes
+2026-05-21 15:21:27 | DEBUG    | compressor | Metadados limpos
+2026-05-21 15:21:28 | INFO     | compressor | Compressão concluída: 4605353 → 4563366 bytes (0.9%)
+2026-05-21 15:21:28 | INFO     | compressor | Redução insuficiente (0.9% < 5.0%) — devolvendo arquivo original
+2026-05-21 15:21:28 | INFO     | pdf_router | Arquivo temporário removido: output/7cc93c20a7ac470fa78cf438e1e9c5fc_in.pdf
+2026-05-21 15:21:28 | INFO     | pdf_router | Compressão entregue | 4605353 → 4605353 bytes (0.0%) | comprimido=False
+2026-05-21 15:21:28 | INFO     | pdf_router | Arquivo temporário removido: output/7cc93c20a7ac470fa78cf438e1e9c5fc.pdf
+2026-05-21 15:21:56 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 6
+2026-05-21 15:21:56 | INFO     | pdf_router | Iniciando merge de 6 PDFs
+2026-05-21 15:21:56 | INFO     | pdf_router | Merge concluído | Arquivo: fdf537d17a594e579468c3fc2431151c.pdf
+2026-05-21 15:21:56 | INFO     | pdf_router | Download solicitado | file_id: fdf537d17a594e579468c3fc2431151c.pdf
+2026-05-21 15:21:56 | INFO     | pdf_router | Download iniciado | Arquivo: fdf537d17a594e579468c3fc2431151c.pdf
+2026-05-21 15:21:56 | INFO     | pdf_router | Arquivo temporário removido: output/fdf537d17a594e579468c3fc2431151c.pdf
+2026-05-21 15:22:15 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 4
+2026-05-21 15:22:15 | INFO     | office_converter | Iniciando conversão LibreOffice: /tmp/tmp5u9flf_v/c692a339ccc448ceb37a8a10947b9380.docx
+2026-05-21 15:22:16 | INFO     | office_converter | LibreOffice concluiu: /tmp/tmp5u9flf_v/c692a339ccc448ceb37a8a10947b9380.pdf
+2026-05-21 15:22:16 | INFO     | pdf_router | Iniciando merge de 4 PDFs
+2026-05-21 15:22:16 | ERROR    | pdf_router | Erro interno no merge: Um dos arquivos selecionados está corrompido ou não é um PDF válido.
+Traceback (most recent call last):
+  File "/home/carlos/APP_MWAY_LINUX/services/pdf/merge.py", line 14, in merge_pdfs
+    leitor = PdfReader(caminho)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 149, in __init__
+    self._initialize_stream(stream)
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 171, in _initialize_stream
+    self.read(stream)
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 644, in read
+    self._find_eof_marker(stream)
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 750, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_utils.py", line 330, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/carlos/APP_MWAY_LINUX/routers/pdf_router.py", line 137, in merge_files
+    await run_in_threadpool(merge_pdfs, pdfs_para_juntar, str(output_file))
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/services/pdf/merge.py", line 27, in merge_pdfs
+    raise Exception("Um dos arquivos selecionados está corrompido ou não é um PDF válido.")
+Exception: Um dos arquivos selecionados está corrompido ou não é um PDF válido.
+2026-05-21 15:23:04 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 3
+2026-05-21 15:23:04 | INFO     | office_converter | Iniciando conversão LibreOffice: /tmp/tmpg0mjl8as/5f3fb72c44eb44b29d050256c7c90d11.docx
+2026-05-21 15:23:05 | INFO     | office_converter | LibreOffice concluiu: /tmp/tmpg0mjl8as/5f3fb72c44eb44b29d050256c7c90d11.pdf
+2026-05-21 15:23:05 | INFO     | pdf_router | Iniciando merge de 3 PDFs
+2026-05-21 15:23:05 | INFO     | pdf_router | Merge concluído | Arquivo: 8995183672074352b5691e9ef22f71b8.pdf
+2026-05-21 15:23:05 | INFO     | pdf_router | Download solicitado | file_id: 8995183672074352b5691e9ef22f71b8.pdf
+2026-05-21 15:23:05 | INFO     | pdf_router | Download iniciado | Arquivo: 8995183672074352b5691e9ef22f71b8.pdf
+2026-05-21 15:23:05 | INFO     | pdf_router | Arquivo temporário removido: output/8995183672074352b5691e9ef22f71b8.pdf
+2026-05-21 15:23:14 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 2
+2026-05-21 15:23:14 | INFO     | pdf_router | Iniciando merge de 2 PDFs
+2026-05-21 15:23:14 | INFO     | pdf_router | Merge concluído | Arquivo: 8ebb748ed2324f67ac8d9fc84d7df825.pdf
+2026-05-21 15:23:14 | INFO     | pdf_router | Download solicitado | file_id: 8ebb748ed2324f67ac8d9fc84d7df825.pdf
+2026-05-21 15:23:14 | INFO     | pdf_router | Download iniciado | Arquivo: 8ebb748ed2324f67ac8d9fc84d7df825.pdf
+2026-05-21 15:23:14 | INFO     | pdf_router | Arquivo temporário removido: output/8ebb748ed2324f67ac8d9fc84d7df825.pdf
+2026-05-21 15:23:27 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 2
+2026-05-21 15:23:27 | INFO     | pdf_router | Iniciando merge de 2 PDFs
+2026-05-21 15:23:27 | INFO     | pdf_router | Merge concluído | Arquivo: 018ff72a655742ee89325592a8d993d2.pdf
+2026-05-21 15:23:27 | INFO     | pdf_router | Download solicitado | file_id: 018ff72a655742ee89325592a8d993d2.pdf
+2026-05-21 15:23:27 | INFO     | pdf_router | Download iniciado | Arquivo: 018ff72a655742ee89325592a8d993d2.pdf
+2026-05-21 15:23:27 | INFO     | pdf_router | Arquivo temporário removido: output/018ff72a655742ee89325592a8d993d2.pdf
+2026-05-21 15:23:39 | INFO     | pdf_router | Nova requisição de compressão | Arquivo: Mway_unificado (9).pdf
+2026-05-21 15:23:39 | INFO     | compressor | Iniciando compressão: output/32ef5c3711404872a577d3765ee16407_in.pdf
+2026-05-21 15:23:39 | INFO     | compressor | PDF aceito: 427 página(s), 7776915 bytes
+2026-05-21 15:23:39 | DEBUG    | compressor | Metadados limpos
+2026-05-21 15:23:40 | INFO     | compressor | Compressão concluída: 7776915 → 2517926 bytes (67.6%)
+2026-05-21 15:23:40 | INFO     | pdf_router | Arquivo temporário removido: output/32ef5c3711404872a577d3765ee16407_in.pdf
+2026-05-21 15:23:40 | INFO     | pdf_router | Compressão entregue | 7776915 → 2517926 bytes (67.62%) | comprimido=True
+2026-05-21 15:23:40 | INFO     | pdf_router | Arquivo temporário removido: output/32ef5c3711404872a577d3765ee16407.pdf
+2026-05-21 15:24:10 | INFO     | pdf_router | Nova requisição de compressão | Arquivo: Mway_unificado (9).pdf
+2026-05-21 15:24:10 | INFO     | compressor | Iniciando compressão: output/29ef06bd88fc4af1abcf500c29cddb03_in.pdf
+2026-05-21 15:24:10 | INFO     | compressor | PDF aceito: 427 página(s), 7776915 bytes
+2026-05-21 15:24:10 | DEBUG    | compressor | Metadados limpos
+2026-05-21 15:24:10 | INFO     | compressor | Compressão concluída: 7776915 → 2517926 bytes (67.6%)
+2026-05-21 15:24:10 | INFO     | pdf_router | Arquivo temporário removido: output/29ef06bd88fc4af1abcf500c29cddb03_in.pdf
+2026-05-21 15:24:10 | INFO     | pdf_router | Compressão entregue | 7776915 → 2517926 bytes (67.62%) | comprimido=True
+2026-05-21 15:24:10 | INFO     | pdf_router | Arquivo temporário removido: output/29ef06bd88fc4af1abcf500c29cddb03.pdf
+2026-05-21 15:24:25 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 2
+2026-05-21 15:24:25 | INFO     | pdf_router | Iniciando merge de 2 PDFs
+2026-05-21 15:24:26 | INFO     | pdf_router | Merge concluído | Arquivo: 7fc59ece46104e31a352a5785492196e.pdf
+2026-05-21 15:24:26 | INFO     | pdf_router | Download solicitado | file_id: 7fc59ece46104e31a352a5785492196e.pdf
+2026-05-21 15:24:26 | INFO     | pdf_router | Download iniciado | Arquivo: 7fc59ece46104e31a352a5785492196e.pdf
+2026-05-21 15:24:26 | INFO     | pdf_router | Arquivo temporário removido: output/7fc59ece46104e31a352a5785492196e.pdf
+2026-05-21 15:24:37 | INFO     | pdf_router | Nova requisição de compressão | Arquivo: Mway_unificado (10).pdf
+2026-05-21 15:24:37 | INFO     | compressor | Iniciando compressão: output/d3ba0a8e299a48c0adeea43c32786dd1_in.pdf
+2026-05-21 15:24:37 | INFO     | compressor | PDF aceito: 854 página(s), 10390843 bytes
+2026-05-21 15:24:37 | DEBUG    | compressor | Metadados limpos
+2026-05-21 15:24:39 | INFO     | compressor | Compressão concluída: 10390843 → 3495118 bytes (66.4%)
+2026-05-21 15:24:39 | INFO     | pdf_router | Arquivo temporário removido: output/d3ba0a8e299a48c0adeea43c32786dd1_in.pdf
+2026-05-21 15:24:39 | INFO     | pdf_router | Compressão entregue | 10390843 → 3495118 bytes (66.36%) | comprimido=True
+2026-05-21 15:24:39 | INFO     | pdf_router | Arquivo temporário removido: output/d3ba0a8e299a48c0adeea43c32786dd1.pdf
+2026-05-21 15:24:57 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 2
+2026-05-21 15:24:57 | INFO     | pdf_router | Iniciando merge de 2 PDFs
+2026-05-21 15:24:58 | INFO     | pdf_router | Merge concluído | Arquivo: 31e02263a710472380be1f42d75d8c1a.pdf
+2026-05-21 15:24:58 | INFO     | pdf_router | Download solicitado | file_id: 31e02263a710472380be1f42d75d8c1a.pdf
+2026-05-21 15:24:58 | INFO     | pdf_router | Download iniciado | Arquivo: 31e02263a710472380be1f42d75d8c1a.pdf
+2026-05-21 15:24:58 | INFO     | pdf_router | Arquivo temporário removido: output/31e02263a710472380be1f42d75d8c1a.pdf
+2026-05-21 15:25:05 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Mway_unificado (11).pdf
+2026-05-21 15:25:05 | INFO     | word_converter | Iniciando conversão PDF → DOCX (Abordagem 1 — pdf2docx): output/50ab774b21484517b336a91e1c3981d8.pdf
+2026-05-21 15:25:05 | WARNING  | pdf_router | PDF inválido: PDF excede o limite de 50 páginas (encontradas: 1281).
+2026-05-21 15:25:05 | INFO     | pdf_router | Arquivo temporário removido: output/50ab774b21484517b336a91e1c3981d8.pdf
+2026-05-21 15:25:57 | INFO     | pdf_router | Nova requisição de compressão | Arquivo: Mway_unificado (11).pdf
+2026-05-21 15:25:57 | INFO     | compressor | Iniciando compressão: output/bd6eb3aa9d244107aec5fd65b7e9f93a_in.pdf
+2026-05-21 15:25:57 | INFO     | compressor | PDF aceito: 1281 página(s), 6289640 bytes
+2026-05-21 15:25:57 | DEBUG    | compressor | Metadados limpos
+2026-05-21 15:26:00 | INFO     | compressor | Compressão concluída: 6289640 → 3697125 bytes (41.2%)
+2026-05-21 15:26:00 | INFO     | pdf_router | Arquivo temporário removido: output/bd6eb3aa9d244107aec5fd65b7e9f93a_in.pdf
+2026-05-21 15:26:00 | INFO     | pdf_router | Compressão entregue | 6289640 → 3697125 bytes (41.22%) | comprimido=True
+2026-05-21 15:26:00 | INFO     | pdf_router | Arquivo temporário removido: output/bd6eb3aa9d244107aec5fd65b7e9f93a.pdf
+2026-05-21 15:26:14 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 3
+2026-05-21 15:26:14 | INFO     | pdf_router | Iniciando merge de 3 PDFs
+2026-05-21 15:26:16 | INFO     | pdf_router | Merge concluído | Arquivo: b1f32c9c55ec4da294dbce5c12cba0e8.pdf
+2026-05-21 15:26:16 | INFO     | pdf_router | Download solicitado | file_id: b1f32c9c55ec4da294dbce5c12cba0e8.pdf
+2026-05-21 15:26:16 | INFO     | pdf_router | Download iniciado | Arquivo: b1f32c9c55ec4da294dbce5c12cba0e8.pdf
+2026-05-21 15:26:16 | INFO     | pdf_router | Arquivo temporário removido: output/b1f32c9c55ec4da294dbce5c12cba0e8.pdf
+2026-05-21 15:26:31 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Mway_Mway_unificado (11)_comprimido.pdf
+2026-05-21 15:26:31 | INFO     | word_converter | Iniciando conversão PDF → DOCX (Abordagem 1 — pdf2docx): output/8a22dd4d7f5741ee92dc3abfcbd10ae8.pdf
+2026-05-21 15:26:31 | WARNING  | pdf_router | PDF inválido: PDF excede o limite de 50 páginas (encontradas: 1281).
+2026-05-21 15:26:31 | INFO     | pdf_router | Arquivo temporário removido: output/8a22dd4d7f5741ee92dc3abfcbd10ae8.pdf
+2026-05-21 15:32:50 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Mway_Mway_unificado (11)_comprimido.pdf
+2026-05-21 15:32:50 | INFO     | word_converter | Iniciando conversão PDF → DOCX (Abordagem 1 — pdf2docx): output/e245afe5054c4a3f81836e243ae3b461.pdf
+2026-05-21 15:32:51 | WARNING  | pdf_router | PDF inválido: PDF excede o limite de 50 páginas (encontradas: 1281).
+2026-05-21 15:32:51 | INFO     | pdf_router | Arquivo temporário removido: output/e245afe5054c4a3f81836e243ae3b461.pdf
+2026-05-21 15:33:49 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 3
+2026-05-21 15:33:49 | INFO     | pdf_router | Iniciando merge de 3 PDFs
+2026-05-21 15:33:50 | INFO     | pdf_router | Merge concluído | Arquivo: d9f51cb9713a4c2599b3980a737693d1.pdf
+2026-05-21 15:33:50 | INFO     | pdf_router | Download solicitado | file_id: d9f51cb9713a4c2599b3980a737693d1.pdf
+2026-05-21 15:33:50 | INFO     | pdf_router | Download iniciado | Arquivo: d9f51cb9713a4c2599b3980a737693d1.pdf
+2026-05-21 15:33:50 | INFO     | pdf_router | Arquivo temporário removido: output/d9f51cb9713a4c2599b3980a737693d1.pdf
+2026-05-21 15:56:14 | INFO     | pdf_router | Nova requisição de compressão | Arquivo: Mway_unificado (13).pdf
+2026-05-21 15:56:14 | INFO     | compressor | Iniciando compressão: output/358cd268d1cf438392407373370ee74e_in.pdf
+2026-05-21 15:56:14 | INFO     | compressor | PDF aceito: 2562 página(s), 10268997 bytes
+2026-05-21 15:56:14 | DEBUG    | compressor | Metadados limpos
+2026-05-21 15:56:21 | INFO     | compressor | Compressão concluída: 10268997 → 5074731 bytes (50.6%)
+2026-05-21 15:56:21 | INFO     | pdf_router | Arquivo temporário removido: output/358cd268d1cf438392407373370ee74e_in.pdf
+2026-05-21 15:56:21 | INFO     | pdf_router | Compressão entregue | 10268997 → 5074731 bytes (50.58%) | comprimido=True
+2026-05-21 15:56:21 | INFO     | pdf_router | Arquivo temporário removido: output/358cd268d1cf438392407373370ee74e.pdf
+2026-05-21 15:57:12 | INFO     | pdf_router | Nova requisição de conversão PDF→DOCX | Arquivo: Mway_Mway_unificado (13)_comprimido.pdf
+2026-05-21 15:57:12 | INFO     | word_converter | Iniciando conversão PDF → DOCX (Abordagem 1 — pdf2docx): output/721e1c503ea747d29bc1ee6726067ce9.pdf
+2026-05-21 15:57:12 | WARNING  | pdf_router | PDF inválido: PDF excede o limite de 50 páginas (encontradas: 2562).
+2026-05-21 15:57:12 | INFO     | pdf_router | Arquivo temporário removido: output/721e1c503ea747d29bc1ee6726067ce9.pdf
+2026-05-21 15:58:16 | INFO     | pdf_router | Nova requisição de merge | Arquivos: 1
+2026-05-21 15:58:16 | INFO     | pdf_router | Iniciando merge de 1 PDFs
+2026-05-21 15:58:16 | ERROR    | pdf_router | Erro interno no merge: Um dos arquivos selecionados está corrompido ou não é um PDF válido.
+Traceback (most recent call last):
+  File "/home/carlos/APP_MWAY_LINUX/services/pdf/merge.py", line 14, in merge_pdfs
+    leitor = PdfReader(caminho)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 149, in __init__
+    self._initialize_stream(stream)
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 171, in _initialize_stream
+    self.read(stream)
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 644, in read
+    self._find_eof_marker(stream)
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_reader.py", line 750, in _find_eof_marker
+    line = read_previous_line(stream)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/pypdf/_utils.py", line 330, in read_previous_line
+    raise PdfStreamError(STREAM_TRUNCATED_PREMATURELY)
+pypdf.errors.PdfStreamError: Stream has ended unexpectedly
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/carlos/APP_MWAY_LINUX/routers/pdf_router.py", line 137, in merge_files
+    await run_in_threadpool(merge_pdfs, pdfs_para_juntar, str(output_file))
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/starlette/concurrency.py", line 32, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/to_thread.py", line 63, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2518, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1002, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/carlos/APP_MWAY_LINUX/services/pdf/merge.py", line 27, in merge_pdfs
+    raise Exception("Um dos arquivos selecionados está corrompido ou não é um PDF válido.")
+Exception: Um dos arquivos selecionados está corrompido ou não é um PDF válido.
+2026-05-21 15:58:24 | INFO     | pdf_router | Nova requisição de compressão | Arquivo: teste_seguranca.pdf
+2026-05-21 15:58:24 | WARNING  | pdf_router | Compressão rejeitada: não é PDF válido (magic: b'@off ')
+2026-05-21 15:58:24 | INFO     | pdf_router | Arquivo temporário removido: output/4f898f956c8e492793c620d4ef64fae9_in.pdf
